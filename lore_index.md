@@ -17,17 +17,21 @@
 현재 작업:
 
 - `WP-202 무공 존재론과 전투 상한` — `active`
-- 내공·경공·점혈·호신강기와 군대·독·화기의 균형을 복수안으로 설계
+- `WP-202A 경지·숙련·평판 언어` — `research-active`
+- `WP-202B 병장기별 무공·비주류 무기` — `review / integration-pending`
 
 최근 완료:
 
 - `WP-201 강호의 제도적 정체` — `resolved-provisional`
+
+현재 진행률과 잔여 작업은 [PM 진행 대시보드](operations/PM-PROGRESS-DASHBOARD.md)를 단일 기준으로 삼는다.
 
 ---
 
 ## 최상위 운영
 
 - [집필·설계 최상위 정책](book_writing.md)
+- [PM 진행 대시보드](operations/PM-PROGRESS-DASHBOARD.md)
 - [오케스트레이션 운영 규약](operations/ORCHESTRATION.md)
 - [설계 하네스](operations/DESIGN-HARNESS.md)
 - [작업 패킷 템플릿](operations/WORK-PACKET-TEMPLATE.md)
@@ -61,12 +65,23 @@
 
 ---
 
+## Gate 2 현재 산출물
+
+### WP-202 — 무공 존재론과 전투 상한
+
+- [경지·숙련·평판 연구 패킷](operations/work-packets/WP-202-MARTIAL-REALM.md) — `research-active`
+- [병장기별 무공·비주류 무기 하위 패킷](operations/work-packets/WP-202B-WEAPON-MARTIAL-ARTS.md) — `review`
+
+WP-202B는 새 주 패킷이 아니라 WP-202의 필수 하위 질문이다. 최종 통합 뒤 WP-205 병기 계층과 다시 동기화한다.
+
+---
+
 ## Gate 2 작업 패킷 순서
 
 ### Foundation Track
 
 1. `WP-201` 강호의 제도적 정체 — `completed`
-2. [WP-202 무공 존재론과 전투 상한](operations/work-packets/WP-202-MARTIAL-ONTOLOGY-AND-LIMITS.md) — `active`
+2. [WP-202 무공 존재론과 전투 상한](operations/work-packets/WP-202-MARTIAL-REALM.md) — `active`
 3. `WP-203` 부상·의술·독·회복 — `planned`
 4. `WP-204` 기환 공통 상한법 — `planned`
 
