@@ -16,8 +16,12 @@
 
 현재 작업:
 
-- `WP-201 강호의 제도적 정체`
-- 강호·사문·문파·세가와 국가 법의 관계를 복수안으로 설계
+- `WP-202 무공 존재론과 전투 상한` — `active`
+- 내공·경공·점혈·호신강기와 군대·독·화기의 균형을 복수안으로 설계
+
+최근 완료:
+
+- `WP-201 강호의 제도적 정체` — `resolved-provisional`
 
 ---
 
@@ -40,36 +44,29 @@
 
 ---
 
-## 운영 결정
+## Gate 2 완료 산출물
 
-- [Gate 0 결정](operations/GATE-0-DECISION.md)
-- [Gate 1 결정](operations/GATE-1-DECISION.md)
-- Gate 2 결정: 작업 패킷 완료 뒤 작성
+### WP-201 — 강호의 제도적 정체
 
-## 프로젝트 헌법
+- [작업 패킷](operations/work-packets/WP-201-JIANGHU-INSTITUTIONAL-IDENTITY.md)
+- [구조안 4종](design/brainstorm/WP-201-JIANGHU-INSTITUTION-OPTIONS.md)
+- [전문가 검증](audit/WP-201-VALIDATION.md)
+- [PM 통합 강호 제도 체계](design/JIANGHU-INSTITUTIONAL-SYSTEM-v0.1.md) — `provisional-canon`
 
-- [프로젝트 헌법 v0.1](design/PROJECT-CONSTITUTION-v0.1.md) — `review / working baseline`
+핵심 결정:
 
----
-
-## Gate 1 — 세계 골격
-
-- [역사·지리 기반 v0.1](design/HISTORICAL-BASELINE-v0.1.md)
-- [세계 권력 작동 원리 v0.1](design/WORLD-POWER-SYSTEM-v0.1.md)
-- [권역 구조 v0.1](design/REGIONAL-STRUCTURE-v0.1.md)
-- [경제·물류 구조 v0.1](design/ECONOMY-AND-LOGISTICS-v0.1.md)
-- [강호 법도와 관습 v0.1](design/JIANGHU-LAW-AND-CUSTOM-v0.1.md)
-- [Gate 1 충돌 감사](audit/GATE-1-CONFLICT-AUDIT.md)
-- [이동 시간 장부](audit/TRAVEL-TIME-LEDGER.md)
+- 강호는 국가 밖의 독립국가가 아니라 사문·가문 중심의 보증·명예·무력 네트워크
+- 국가법·강호 공통 관습·지역 집행의 3층 구조
+- 무림맹은 법원이 아니라 계승·공적·중재·공동 보증 기관
 
 ---
 
-## Gate 2 — 작업 패킷 순서
+## Gate 2 작업 패킷 순서
 
 ### Foundation Track
 
-1. `WP-201` 강호의 제도적 정체 — `active`
-2. `WP-202` 무공 존재론과 전투 상한 — `planned`
+1. `WP-201` 강호의 제도적 정체 — `completed`
+2. [WP-202 무공 존재론과 전투 상한](operations/work-packets/WP-202-MARTIAL-ONTOLOGY-AND-LIMITS.md) — `active`
 3. `WP-203` 부상·의술·독·회복 — `planned`
 4. `WP-204` 기환 공통 상한법 — `planned`
 
@@ -107,6 +104,26 @@
 기존 PM 추천안은 자동 우선하지 않는다.
 
 ---
+
+## Gate 1 — 세계 골격
+
+- [역사·지리 기반 v0.1](design/HISTORICAL-BASELINE-v0.1.md)
+- [세계 권력 작동 원리 v0.1](design/WORLD-POWER-SYSTEM-v0.1.md)
+- [권역 구조 v0.1](design/REGIONAL-STRUCTURE-v0.1.md)
+- [경제·물류 구조 v0.1](design/ECONOMY-AND-LOGISTICS-v0.1.md)
+- [강호 법도와 관습 v0.1](design/JIANGHU-LAW-AND-CUSTOM-v0.1.md)
+- [Gate 1 충돌 감사](audit/GATE-1-CONFLICT-AUDIT.md)
+- [이동 시간 장부](audit/TRAVEL-TIME-LEDGER.md)
+
+## 운영 결정
+
+- [Gate 0 결정](operations/GATE-0-DECISION.md)
+- [Gate 1 결정](operations/GATE-1-DECISION.md)
+- Gate 2 결정: 작업 패킷 완료 뒤 작성
+
+## 프로젝트 헌법
+
+- [프로젝트 헌법 v0.1](design/PROJECT-CONSTITUTION-v0.1.md) — `review / working baseline`
 
 ## 감사 장부
 
