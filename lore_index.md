@@ -9,68 +9,112 @@
 
 - Gate 0 — 프로젝트 경계: `resolved-provisional`
 - Gate 1 — 세계 골격: `resolved-provisional`
-- Gate 2 — 세력·팔대신병 시스템: `in-progress`
+- Gate 2 — 핵심 시스템: `scope-frozen / in-progress`
 - Gate 3 — 과거 진실·인물·핵심 갈등: `blocked`
 - Gate 4 — 결말·전체 플롯·복선: `blocked`
 - Gate 5 — 집필 준비: `blocked`
 
-## 운영·결정
+현재 작업:
 
+- `WP-201 강호의 제도적 정체`
+- 강호·사문·문파·세가와 국가 법의 관계를 복수안으로 설계
+
+---
+
+## 최상위 운영
+
+- [집필·설계 최상위 정책](book_writing.md)
 - [오케스트레이션 운영 규약](operations/ORCHESTRATION.md)
+- [설계 하네스](operations/DESIGN-HARNESS.md)
+- [작업 패킷 템플릿](operations/WORK-PACKET-TEMPLATE.md)
 - [전체 설계 로드맵](design/MASTER-DESIGN-ROADMAP.md)
+
+## 설정 완전성·범위 관리
+
+- [전체 설정 분야 지도](design/SETTING-DOMAIN-MAP.md) — `review`
+- [전문가 합동 완전성 감사](audit/SETTING-GAP-REPORT.md) — `review-complete`
+- [설정 백로그](audit/SETTING-BACKLOG.md) — `active-ledger`
+- [Gate 2 범위 동결](operations/GATE-2-SCOPE-FREEZE.md) — `provisional-canon`
+
+전문가 12개 관점과 교차검사 4회 결과, 현재 D01~D27 밖에 즉시 추가해야 할 별도 상위 설정 분야는 발견되지 않았다. 이후 아이디어는 기존 분야의 하위 항목 또는 L2/L3 변경으로 처리한다.
+
+---
+
+## 운영 결정
+
 - [Gate 0 결정](operations/GATE-0-DECISION.md)
 - [Gate 1 결정](operations/GATE-1-DECISION.md)
+- Gate 2 결정: 작업 패킷 완료 뒤 작성
 
 ## 프로젝트 헌법
 
 - [프로젝트 헌법 v0.1](design/PROJECT-CONSTITUTION-v0.1.md) — `review / working baseline`
 
+---
+
 ## Gate 1 — 세계 골격
 
-- [역사·지리 기반 v0.1](design/HISTORICAL-BASELINE-v0.1.md) — `draft/review`
-- [세계 권력 작동 원리 v0.1](design/WORLD-POWER-SYSTEM-v0.1.md) — `review`
-- [권역 구조 v0.1](design/REGIONAL-STRUCTURE-v0.1.md) — `review`
-- [경제·물류 구조 v0.1](design/ECONOMY-AND-LOGISTICS-v0.1.md) — `review`
-- [강호 법도와 관습 v0.1](design/JIANGHU-LAW-AND-CUSTOM-v0.1.md) — `review`
-- [Gate 1 충돌 감사](audit/GATE-1-CONFLICT-AUDIT.md) — `review-complete`
+- [역사·지리 기반 v0.1](design/HISTORICAL-BASELINE-v0.1.md)
+- [세계 권력 작동 원리 v0.1](design/WORLD-POWER-SYSTEM-v0.1.md)
+- [권역 구조 v0.1](design/REGIONAL-STRUCTURE-v0.1.md)
+- [경제·물류 구조 v0.1](design/ECONOMY-AND-LOGISTICS-v0.1.md)
+- [강호 법도와 관습 v0.1](design/JIANGHU-LAW-AND-CUSTOM-v0.1.md)
+- [Gate 1 충돌 감사](audit/GATE-1-CONFLICT-AUDIT.md)
+- [이동 시간 장부](audit/TRAVEL-TIME-LEDGER.md)
 
-## Gate 2 — 세력 아키텍처
+---
 
-예정 문서:
+## Gate 2 — 작업 패킷 순서
 
-- `design/FACTION-ARCHITECTURE-v0.4.md`
-- `design/FACTION-SLOTS-v0.1.md`
-- `audit/FACTION-POWER-PROFILES.md`
-- `design/FACTION-RELATIONSHIP-MAP.md`
+### Foundation Track
 
-선행 질문:
+1. `WP-201` 강호의 제도적 정체 — `active`
+2. `WP-202` 무공 존재론과 전투 상한 — `planned`
+3. `WP-203` 부상·의술·독·회복 — `planned`
+4. `WP-204` 기환 공통 상한법 — `planned`
 
-- 구파일방은 고정 명단인가 당대 정치 연합인가?
-- 오대세가는 영구 서열인가 핵심 의석인가?
-- A등급 핵심 세력 12~16개의 기능 슬롯은 무엇인가?
-- 해남파·모산파·보타암·검각·산동악가 등의 배치 기준은 무엇인가?
+### Object and Evidence Track
 
-## Gate 2 — 팔대신병 시스템
+5. `WP-205` 병기·법구·보패·신병 분류
+6. `WP-206` 기록·증거·감정·위조 체계
+7. `WP-207` 팔대신병 정의와 왜 여덟인가
+8. `WP-208` 신병의 기억·감정·동작 흔적
+9. `WP-209` 신병 권리·계승·집합 현상
 
-예정 문서:
+### Faction Track
 
-- `design/EIGHT-DIVINE-ARMS-SYSTEM-v0.1.md`
-- `design/ORIGIN-HYPOTHESES-v0.1.md`
-- `audit/ARTIFACT-RULE-CHECKLIST.md`
-- `audit/ARTIFACT-OWNERSHIP-LEDGER.md`
+10. `WP-210` 세력 분류와 대표 의석
+11. `WP-211` 세력 권력·경제 프로필
+12. `WP-212` 세력–신병 관계 행렬
 
-선행 질문:
+### Framework Track
 
-- 왜 정확히 여덟 개인가?
-- 한 사건의 분할물인가, 서로 다른 시대 유물의 결합인가?
-- 기억·감정·동작 잔향은 어떤 규칙으로 남는가?
-- 각 신병의 기능과 대가는 어떻게 달라지는가?
+13. `WP-213` 기환 하위 현상 경계
+14. `WP-214` 명성·서열·대회 제도
+15. `WP-215` 생활·신분·외부 무림 최소 골격
+
+자세한 범위·종료 조건은 [Gate 2 범위 동결](operations/GATE-2-SCOPE-FREEZE.md)을 따른다.
+
+---
+
+## 기존 후보 자료
+
+다음은 정본이 아니라 Work Packet에서 재검토할 후보 자료다.
+
+- [핵심 세력 슬롯 v0.1](design/FACTION-SLOTS-v0.1.md) — `candidate-source`
+- [팔대신병 기원 가설 v0.1](design/ORIGIN-HYPOTHESES-v0.1.md) — `candidate-source`
+
+기존 PM 추천안은 자동 우선하지 않는다.
+
+---
 
 ## 감사 장부
 
 - [미해결 질문 장부](audit/OPEN-QUESTIONS.md)
+- [설정 백로그](audit/SETTING-BACKLOG.md)
+- [설정 완전성 감사](audit/SETTING-GAP-REPORT.md)
 - [이동 시간 장부](audit/TRAVEL-TIME-LEDGER.md)
-- 향후: 연표, 소유권, 복선, 세력 권력 프로필, 경제 장부
+- 향후: 용어, 증거, 권리·소유권, 세력 관계, 부상, 복선, 연표 장부
 
 ## 원고·미디어 인덱스
 
@@ -82,4 +126,4 @@
 
 후속 작업은 `canon` 또는 PM이 작업 기준으로 승인한 `provisional-canon`만 전제로 삼는다.
 
-아이디어가 기존 문서와 충돌하면 삭제하지 않고 미해결 질문 또는 변경 기록으로 이동한다.
+아이디어가 기존 문서와 충돌하면 삭제하지 않고 백로그·미해결 질문·변경 기록으로 이동한다.
