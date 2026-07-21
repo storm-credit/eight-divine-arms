@@ -13,7 +13,8 @@
 - 설정집 완성도 재감사: 완료
 - S1 세계 운영 현실: 완료
 - S2 강호 제도·조직 운영: 임시 통과
-- S3 무공·병장기·의술: 진행 중
+- S3 무공·병장기·의술: 임시 통과
+- S4 기환·종교·생태: 진행 중
 - 원고·장면·대사: 잠금
 
 기존 시놉시스·60장 개요·장면 카드는 `deferred-reference`이며 현재 설정 정본 근거가 아니다.
@@ -52,7 +53,7 @@
 - [설정 백로그](audit/SETTING-BACKLOG.md)
 - [미해결 질문](audit/OPEN-QUESTIONS.md)
 
-현재 PM 추정 설정집 완성도: **약 68~72%**
+현재 PM 추정 설정집 완성도: **약 76~80%**
 
 ---
 
@@ -78,37 +79,40 @@
 - [개방·하오문·녹림·수로채·살수](design/BEGGARS-HAOMUN-GREENWOOD-WATERBANDITS-ASSASSINS-v0.1.md)
 - [S2 교차감사](audit/S2-JIANGHU-ORGANIZATION-CROSS-AUDIT.md)
 
-실제 구파일방·오대세가·지역 B/C세력 명단은 S5 지역 배치 뒤 확정한다.
-
 ---
 
 # S3 — 무공·병장기·의술
 
-진행 순서:
-
-1. 무공 수련 생애주기·재능·사승
-2. 경지·숙련·실전 프로필
-3. 병장기 계통·비주류 무기·상성
-4. 갑주·기관·암기·화기·군진
-5. 의술·독·검시·약재·재활
-6. 교차감사
-
-기존 기반:
-
 - [무공 상위 체계](design/MARTIAL-SYSTEM-FOUNDATION-v0.1.md)
-- [부상·의술·독](design/INJURY-MEDICINE-POISON-SYSTEM-v0.1.md)
-- [병기·유물 분류](design/ARTIFACT-CLASSIFICATION-SYSTEM-v0.1.md)
+- [무공 수련 생애주기](design/MARTIAL-TRAINING-LIFECYCLE-SYSTEM-v0.1.md)
+- [경지 언어·숙련·실전 프로필](design/MARTIAL-RANKING-COMBAT-PROFILE-SYSTEM-v0.1.md)
+- [병장기별 무공·비주류 무기](design/WEAPON-MARTIAL-TACTICS-SYSTEM-v0.1.md)
+- [갑주·기관·암기·화기·군진](design/ARMOR-ENGINES-FIREARMS-FORMATIONS-SYSTEM-v0.1.md)
+- [부상·의술·독 상위 체계](design/INJURY-MEDICINE-POISON-SYSTEM-v0.1.md)
+- [의술·독·검시·약재·재활 운영](design/MEDICINE-POISON-FORENSICS-REHABILITATION-OPERATIONS-v0.1.md)
+- [S3 교차감사](audit/S3-MARTIAL-WEAPON-MEDICINE-CROSS-AUDIT.md)
 
 ---
 
-# S4 이후
+# S4 — 기환·종교·생태
 
-## S4 기환·종교·생태
+진행 순서:
 
-- 부적·법구·보패·진법·풍수·점복
-- 영물·영수·영초·사방신
-- 죽음·장례·강령·강시·시귀
-- 종교·민간신앙·사교 판정
+1. 부적·법구·보패
+2. 진법·풍수·점복
+3. 영물·영수·영초·사방신
+4. 죽음·장례·강령·강시·시귀
+5. 불문·도문·민간신앙·사교 판정
+6. 기환 판별·사기·오인 교차감사
+
+기존 기반:
+
+- [기환 상한](design/SUPERNATURAL-LIMITS-v0.1.md)
+- [기환 하위 현상](design/SUPERNATURAL-SUBSYSTEMS-v0.1.md)
+
+---
+
+# S5 이후
 
 ## S5 권역·외부 무림
 
@@ -129,7 +133,7 @@
 
 ---
 
-# 기존 작품 고유 핵심
+# 작품 고유 핵심
 
 - [팔대신병 정의](design/EIGHT-DIVINE-ARMS-DEFINITION-v0.1.md)
 - [신병 잔흔](design/ARTIFACT-MEMORY-SYSTEM-v0.1.md)
