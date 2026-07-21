@@ -1,10 +1,12 @@
 # 《팔대신병록》 설정·설계 허브
 
-상태: `setting-bible-complete / human-edit-ready`
+상태: `setting-bible-complete / human-edit-packet-ready`
 상위 정책: [`book_writing.md`](book_writing.md)
 범위 결정: [`operations/SETTING-BIBLE-ONLY-SCOPE.md`](operations/SETTING-BIBLE-ONLY-SCOPE.md)
 진행 현황: [`operations/PM-PROGRESS-DASHBOARD.md`](operations/PM-PROGRESS-DASHBOARD.md)
 통합 설정집: [`design/SETTING-BIBLE-v2.0-MASTER.md`](design/SETTING-BIBLE-v2.0-MASTER.md)
+Human Edit: [`operations/HUMAN-EDIT-REVIEW-PACKET-v1.md`](operations/HUMAN-EDIT-REVIEW-PACKET-v1.md)
+정본 승격: [`operations/CANON-PROMOTION-CHECKLIST-v1.md`](operations/CANON-PROMOTION-CHECKLIST-v1.md)
 완료 결정: [`operations/SETTING-BIBLE-v2-COMPLETION-DECISION.md`](operations/SETTING-BIBLE-v2-COMPLETION-DECISION.md)
 
 ## 현재 상태
@@ -12,23 +14,40 @@
 - 설정집 구조·운영 규칙: 완료
 - S1~S7 교차감사: 통과
 - 최종 전문가 누락 감사: 통과
+- 조기 플롯 격리 감사: 통과
 - 상위 설정 누락: 0
 - 치명적 충돌: 0
+- Human Edit 패킷: 완료
 - 사용자 Human Edit: 대기
 - 원고·장면·대사: 잠금
 
-기존 시놉시스·60장 개요·장면 카드는 `deferred-reference`이며 설정 정본 근거가 아니다.
+기존 시놉시스·6부·60장 개요·장면 카드는 `deferred-reference`이며 현재 설정 정본 근거가 아니다.
 
 ---
 
 # 최우선 문서
 
 1. [통합 설정집 v2.0 MASTER](design/SETTING-BIBLE-v2.0-MASTER.md)
-2. [최종 설정집 완전성 감사 v3](audit/FINAL-SETTING-BIBLE-COMPLETENESS-AUDIT-v3.md)
-3. [설정집 v2.0 완료 결정](operations/SETTING-BIBLE-v2-COMPLETION-DECISION.md)
-4. [PM 진행 대시보드](operations/PM-PROGRESS-DASHBOARD.md)
+2. [Human Edit 검토 패킷](operations/HUMAN-EDIT-REVIEW-PACKET-v1.md)
+3. [최종 설정집 완전성 감사 v3](audit/FINAL-SETTING-BIBLE-COMPLETENESS-AUDIT-v3.md)
+4. [정본 승격 체크리스트](operations/CANON-PROMOTION-CHECKLIST-v1.md)
+5. [설정집 v2.0 완료 결정](operations/SETTING-BIBLE-v2-COMPLETION-DECISION.md)
+6. [조기 플롯 격리 감사](audit/LEGACY-PLOT-REFERENCE-ISOLATION-AUDIT.md)
+7. [PM 진행 대시보드](operations/PM-PROGRESS-DASHBOARD.md)
 
 과거 상태표·Gate 문서·플롯 참고안과 충돌하면 위 문서를 우선한다.
+
+---
+
+# Human Edit PM 권고안
+
+1. 기환: 저강도 확정형
+2. 세력: 익숙한 명문 35~45% + 고유 기능 세력 55~65%
+3. 신병 명칭: 현재 작업명 유지 + 지역 이형명·원기록명
+4. 쇄조도: 반쯤 알려진 재난
+5. 역사/장르: 역사 골격 엄격 + 장르 통칭 가독성 우선
+
+5번은 사용자 결정으로 해결됐다. 나머지는 사용자 승인 전 `recommended-default`다.
 
 ---
 
@@ -58,6 +77,7 @@
 - [설정집 완성도 재감사](audit/SETTING-BIBLE-COMPLETENESS-v2.md)
 - [최초 누락 감사](audit/SETTING-GAP-REPORT.md)
 - [최종 완전성 감사](audit/FINAL-SETTING-BIBLE-COMPLETENESS-AUDIT-v3.md)
+- [조기 플롯 격리 감사](audit/LEGACY-PLOT-REFERENCE-ISOLATION-AUDIT.md)
 - [설정 백로그](audit/SETTING-BACKLOG.md)
 - [미해결 질문](audit/OPEN-QUESTIONS.md)
 
@@ -158,8 +178,6 @@
 
 # 의도적 후속 상세화
 
-다음은 설정집 미완이 아니라 인물·플롯 단계의 창작 슬롯이다.
-
 - 구파일방·오대세가 최종 전체 명단
 - 모든 B/C 세력 고유명
 - 실제 고수·후기지수 순위
@@ -174,4 +192,4 @@
 
 - [원고 인덱스](원고_index.md)
 
-사용자 Human Edit와 설정집 `canon` 승격 전에는 새 초고·장면 카드·대사·연출을 작성하지 않는다.
+Human Edit와 설정집 `canon` 승격 전에는 새 초고·장면 카드·대사·연출을 작성하지 않는다.
