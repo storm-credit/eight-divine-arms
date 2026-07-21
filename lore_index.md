@@ -21,17 +21,24 @@
 
 - 전체 시놉시스 초안 완료
 - 6부 원고 개요 초안 완료
-- 다음 단계: 장별 개요
+- 60장 작업 개요 초안 완료
+- 다음 단계: 장면 카드
 
 ---
 
 # 최우선 설정 기준
 
 - [통합 설정집 v1.0](design/SETTING-BIBLE-v1.0.md)
+- [Gate 5 역사 지명 교정 부록](operations/GATE-5-HISTORY-ADDENDUM.md)
 - [Gate 5 집필 준비 감사](audit/GATE-5-READINESS-AUDIT.md)
 - [Gate 5 결정](operations/GATE-5-DECISION.md)
 
-과거 후보 문서와 충돌할 경우 통합 설정집과 최신 Gate 결정을 우선한다.
+지명에 한해 역사 교정 부록이 통합 설정집의 레거시 작업명을 우선한다.
+
+- 해문도 → 쇄조도
+- 해문합증 → 쇄조합증
+
+과거 후보 문서와 충돌할 경우 최신 Gate 결정·교정 부록·통합 설정집을 우선한다.
 
 ---
 
@@ -39,10 +46,13 @@
 
 - [전체 시놉시스 v0.1](manuscript/SYNOPSIS-v0.1.md)
 - [6부 원고 개요 v0.1](manuscript/ARC-OUTLINE-v0.1.md)
+- [60장 작업 개요 v0.1](manuscript/CHAPTER-OUTLINE-v0.1.md)
 - [선택 결말](design/SELECTED-ENDING-v0.1.md)
 - [전체 대서사](design/MASTER-PLOT-v0.1.md)
 - [부별 구조](design/ARC-BREAKDOWN-v0.1.md)
 - [주요 전환점](design/TURNING-POINTS-v0.1.md)
+
+60장은 작업 구조이며 장면 리듬 감사에서 54~66장 범위로 조정할 수 있다.
 
 ---
 
@@ -83,7 +93,7 @@
 
 ## 원사건·인물·세력
 
-- [해문도 원사건](design/ORIGINAL-EVENT-v0.1.md)
+- [쇄조도 원사건 — 레거시 파일명](design/ORIGINAL-EVENT-v0.1.md)
 - [최초 여덟](design/ORIGINAL-EIGHT-PARTIES-v0.1.md)
 - [진실 층위](design/TRUTH-LAYERS-v0.1.md)
 - [인물 바이블](design/CHARACTER-BIBLE-v0.1.md)
@@ -122,6 +132,8 @@
 - 표사 → 호송인·압운인
 - 표두 → 호송두·행관
 - 남방 회수별조 → 남방 회수차견·금의위 차견 일행
+- 해문도 → 쇄조도
+- 해문합증 → 쇄조합증
 
 ---
 
@@ -133,6 +145,7 @@
 - [Gate 3 결정](operations/GATE-3-DECISION.md)
 - [Gate 4 결정](operations/GATE-4-DECISION.md)
 - [Gate 5 결정](operations/GATE-5-DECISION.md)
+- [Gate 5 역사 교정 부록](operations/GATE-5-HISTORY-ADDENDUM.md)
 
 ---
 
@@ -140,7 +153,7 @@
 
 지금부터 새 상위 설정을 늘리지 않는다.
 
-장별 개요에 실제로 필요한:
+장면 카드에 실제로 필요한:
 
 - 지역 인물
 - 사건 피해자
@@ -151,4 +164,4 @@
 
 만 해당 장의 기능에 맞춰 추가한다.
 
-정본 승격은 사용자 Human Edit 뒤 수행한다.
+정본 승격과 장면 카드 대량 작성은 사용자 Human Edit 뒤 진행한다.
