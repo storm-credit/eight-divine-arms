@@ -11,10 +11,13 @@
 
 - 상위 설정 골격 D01~D27: 완료
 - 설정집 완성도 재감사: 완료
-- S1 세계 운영 현실: 완료
+- S1 세계 운영 현실: 임시 통과
 - S2 강호 제도·조직 운영: 임시 통과
 - S3 무공·병장기·의술: 임시 통과
-- S4 기환·종교·생태: 진행 중
+- S4 기환·종교·생태: 임시 통과
+- S5 권역·외부 무림: 임시 통과
+- S6 기록·명성·용어·장부: 임시 통과
+- S7 팔대신병 개별 설정집: 진행 중
 - 원고·장면·대사: 잠금
 
 기존 시놉시스·60장 개요·장면 카드는 `deferred-reference`이며 현재 설정 정본 근거가 아니다.
@@ -53,7 +56,7 @@
 - [설정 백로그](audit/SETTING-BACKLOG.md)
 - [미해결 질문](audit/OPEN-QUESTIONS.md)
 
-현재 PM 추정 설정집 완성도: **약 76~80%**
+현재 PM 추정 설정집 완성도: **약 88~91%**
 
 ---
 
@@ -96,44 +99,52 @@
 
 # S4 — 기환·종교·생태
 
-진행 순서:
-
-1. 부적·법구·보패
-2. 진법·풍수·점복
-3. 영물·영수·영초·사방신
-4. 죽음·장례·강령·강시·시귀
-5. 불문·도문·민간신앙·사교 판정
-6. 기환 판별·사기·오인 교차감사
-
-기존 기반:
-
 - [기환 상한](design/SUPERNATURAL-LIMITS-v0.1.md)
 - [기환 하위 현상](design/SUPERNATURAL-SUBSYSTEMS-v0.1.md)
+- [부적·법구·보패](design/TALISMANS-RITUAL-IMPLEMENTS-TREASURE-ARTIFACTS-SYSTEM-v0.1.md)
+- [진법·풍수·점복](design/FORMATIONS-FENGSHUI-DIVINATION-SYSTEM-v0.1.md)
+- [영물·영수·영초·사방신](design/SPIRITUAL-FLORA-FAUNA-COSMOLOGY-SYSTEM-v0.1.md)
+- [죽음·장례·강령·강시·시귀](design/DEATH-FUNERARY-NECROMANCY-JIANGSHI-CORPSE-SPIRIT-SYSTEM-v0.1.md)
+- [불문·도문·민간신앙·사교](design/RELIGION-FOLK-BELIEF-HERESY-ASSESSMENT-SYSTEM-v0.1.md)
+- [S4 교차감사](audit/S4-SUPERNATURAL-RELIGION-ECOLOGY-CROSS-AUDIT.md)
 
 ---
 
-# S5 이후
+# S5 — 권역·외부 무림
 
-## S5 권역·외부 무림
-
-- 권역별 기후·생업·언어·교통·강호 문화
-- 지역 세력 A/B/C 배치
-- 해상·변경·외부 무림
-
-## S6 기록·명성·용어·장부
-
-- 교육·문해·언어·비급·공문
-- 서열록·후기지수·무림대회
-- 용어 사전·가격·관할·권리·상한 장부
-
-## S7 팔대신병 개별 설정집
-
-- 여덟 신병의 외형·재료·수리·운송·감정·위조
-- 잔흔·대가·권리·보관·지역 문화
+- [동남 연해·강남 권역 설정집](design/REGIONAL-BIBLE-SOUTHEAST-JIANGNAN-v0.1.md)
+- [중원·서남 권역 설정집](design/REGIONAL-BIBLE-CENTRAL-SOUTHWEST-v0.1.md)
+- [북방·서북·외부 무림 설정집](design/REGIONAL-BIBLE-NORTH-NORTHWEST-EXTERNAL-v0.1.md)
+- [권역별 세력 배치 장부](design/REGIONAL-FACTION-PLACEMENT-REGISTRY-v0.1.md)
+- [S5 교차감사](audit/S5-REGIONAL-EXTERNAL-FACTION-CROSS-AUDIT.md)
 
 ---
 
-# 작품 고유 핵심
+# S6 — 기록·명성·용어·장부
+
+- [교육·문해·언어·통역](design/LITERACY-EDUCATION-LANGUAGE-INTERPRETATION-SYSTEM-v0.1.md)
+- [기록·비급·족보·공문·해도·인쇄](design/RECORDS-MANUSCRIPTS-PRINTING-MAPS-SYSTEM-v0.1.md)
+- [명성·서열록·후기지수·무림대회](design/REPUTATION-RANKING-TOURNAMENT-SYSTEM-v0.2.md)
+- [용어·호칭·시대감 지침](design/TERMINOLOGY-HONORIFICS-STYLE-GUIDE-v0.1.md)
+- [가격·임금·여비·자원 장부](audit/ECONOMIC-PRICE-AND-RESOURCE-LEDGER-v0.1.md)
+- [관할·권리·보관·분쟁 장부](audit/JURISDICTION-RIGHTS-AND-CUSTODY-LEDGER-v0.1.md)
+- [S6 교차감사](audit/S6-RECORDS-REPUTATION-TERMINOLOGY-LEDGERS-CROSS-AUDIT.md)
+
+---
+
+# S7 — 팔대신병 개별 설정집
+
+진행 순서:
+
+1. 여덟 신병 공통 카드 형식
+2. 외형·재료·규격·운송
+3. 제작·개조·수리·부품 연속성
+4. 잔흔 채널·촉발·대가·오인
+5. 감정·위조·복제품
+6. 현재 권리·보관·지역 문화·분쟁
+7. 여덟 카드 교차감사
+
+기존 기반:
 
 - [팔대신병 정의](design/EIGHT-DIVINE-ARMS-DEFINITION-v0.1.md)
 - [신병 잔흔](design/ARTIFACT-MEMORY-SYSTEM-v0.1.md)
@@ -143,9 +154,18 @@
 - [쇄조도 원사건 — 레거시 파일명](design/ORIGINAL-EVENT-v0.1.md)
 - [최초 여덟](design/ORIGINAL-EIGHT-PARTIES-v0.1.md)
 - [진실 층위](design/TRUTH-LAYERS-v0.1.md)
-- [핵심 세력 등록부 후보](design/CORE-FACTION-REGISTRY-v0.1.md)
 
-이 항목은 S1~S6의 설정 현실과 교차한 뒤 S7 및 v2.0에서 다시 통합한다.
+---
+
+# 후속 통합
+
+S7 뒤:
+
+1. 설정집 v2.0 통합
+2. D01~D27 상태 재채점
+3. 전문가 합동 최종 누락 감사
+4. 사용자 Human Edit
+5. `canon` 승격
 
 ---
 
