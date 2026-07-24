@@ -1,11 +1,12 @@
 # 《팔대신병록》 PM 진행 대시보드
 
-상태: `design-review / revision-required`
+상태: `plot-redesign-v3 / human-edit-pending`
 총괄: PM 오케스트레이터
 상위 정책: [`../book_writing.md`](../book_writing.md)
+실행 규칙: [`../CLAUDE.md`](../CLAUDE.md)
 범위 고정: [`PROJECT-DESIGN-SCOPE-LOCK-v1.md`](PROJECT-DESIGN-SCOPE-LOCK-v1.md)
+계획 이탈: [`PLAN-DEVIATION-LOG.md`](PLAN-DEVIATION-LOG.md)
 전면 재검토: [`../audit/DESIGN-PACKAGE-REVIEW-v2.md`](../audit/DESIGN-PACKAGE-REVIEW-v2.md)
-상태 재분류: [`DESIGN-REVIEW-STATUS-RESET-v2.md`](DESIGN-REVIEW-STATUS-RESET-v2.md)
 
 ## 1. 우리가 만드는 것
 
@@ -22,92 +23,105 @@
 5. 연속성·누락·과잉 최종 감사
 6. 집필 준비 판정
 
-## 2. 전면 재검토 뒤 현재 위치
+## 2. 현재 위치
 
 | 영역 | 상태 | 판정 |
 |---|---|---|
 | 작품 헌법·세계·시스템 | `canon` | 유지 |
-| 인물·관계 프레임 | `canon-framework` | 유지, Outline 통합 재검토 |
-| 결말·전체 플롯 | `recommended-default / human-edit-pending` | 사용자 승인 없음 |
-| 5막·8구간 | `validation-framework` | 수정 검증용 |
-| 50장 Outline | `validation-draft / revision-required` | 정식 Gate 통과 아님 |
-| 기존 Outline 감사 v1 | `superseded` | 통과 판정 철회 |
+| 인물·관계 프레임 | `canon-framework` | 유지, 플롯 통합 재검토 |
+| 기존 플롯 v2 | `superseded-for-redesign` | 참고 후보 |
+| 플롯 재설계 v3 | `recommended-default / human-edit-pending` | 네 시안 비교 완료 |
+| 기존 5막·8구간 | `validation-framework` | 비교 자료 |
+| 기존 50장 Outline | `validation-draft / revision-required` | 정식 Gate 통과 아님 |
 | 장면·원고 | `locked` | 미착수 |
 
-진행률 숫자로 완료도를 과장하지 않는다. 현재 표현은 **핵심 기반 완료, 서사 구조 재검토 중**이다.
+현재 표현은 **핵심 기반 유지, 대서사 구조 선택 대기**다.
 
-## 3. 재검토에서 확인된 P0 문제
+## 3. 이번 Gate 완료 항목
 
-1. 플롯 Human Edit 승인 결정이 없는데 Outline Gate를 개방함
-2. Outline 파일의 48장·50장 기준, 필수 필드, 구간 행렬이 불일치함
+- [`PLOT-REDESIGN-SCOPE-FREEZE-v3.md`](PLOT-REDESIGN-SCOPE-FREEZE-v3.md) — 재설계 범위 동결
+- [`../audit/PLOT-REDESIGN-BLIND-SPOT-SWEEP-v3.md`](../audit/PLOT-REDESIGN-BLIND-SPOT-SWEEP-v3.md) — 맹점 훑기
+- [`../audit/PLOT-REDESIGN-PREMORTEM-v3.md`](../audit/PLOT-REDESIGN-PREMORTEM-v3.md) — 먼저 짚을 함정
+- [`../audit/OPEN-SOURCE-NARRATIVE-DESIGN-REFERENCE-v1.md`](../audit/OPEN-SOURCE-NARRATIVE-DESIGN-REFERENCE-v1.md) — 오픈소스 본보기 검토
+- [`../design/PLOT-REDESIGN-FOUR-OPTIONS-v3.md`](../design/PLOT-REDESIGN-FOUR-OPTIONS-v3.md) — 디자인 시안 네 개
+- [`PLOT-REDESIGN-HUMAN-EDIT-PACKET-v3.md`](PLOT-REDESIGN-HUMAN-EDIT-PACKET-v3.md) — 사용자 선택 패킷
 
-조치:
+## 4. 재설계 네 안
 
-- 플롯을 승인 대기 후보로 되돌림
-- 50장 Outline을 검증 초안으로 재분류
-- 8구간 기능 행렬 복구
-- 기존 Outline 통과 판정 철회
+| 안 | 구조 | 상태 |
+|---|---|---|
+| A | 보증 회복형 | 후보 |
+| B | 장기 분산 호송형 | **PM 권고** |
+| C | 회수자 추적형 | 후보 |
+| D | 연해 공동체 방어형 | 후보 |
 
-## 4. 서사 구조의 중대 문제
+PM 권고 조합:
 
-1. 문서·권리·재심 절차가 전통 무협의 행동 중심을 압도할 위험
-2. 8구간이 `새 신병·새 전문가·새 과오`의 도덕 시험형 순례로 반복될 위험
-3. 적대 책임 분산으로 독자가 직접 쫓을 현장 적대자 부재
-4. 심소연의 시작 욕망과 능동적 사건 유발력이 약함
-5. 심소연 시점이 27/50장, 54%로 낮고 선택 시점이 많음
-6. 금릉·서남이 독립 수사물처럼 분리될 위험
-7. 결말이 물리적 절정보다 분류·제도 설명으로 끝날 위험
+- A의 분점 보증·가족 가업 stakes
+- B의 하나의 장기 복합 호송
+- C의 반복 현장 회수자 R-1
+- D의 가족·공방·지역 공동체 영구 손실
 
-## 5. 유지할 강점
+## 5. B안 핵심
 
-- 표국 인계 실무자 주인공
-- 팔대신병의 잔흔·권리·계승 구조
-- 국가·강호·상업·지역 공동체의 충돌
-- 심소연의 과오·전문성·신체 제약
-- 사문경·위철산·장계엄의 독립 논리
-- 단계적 합증·분산 귀환 결말 후보
-- 5막·8구간 검증 골격
+- 심소연은 분점 해산을 막기 위한 마지막 복합 인계를 자청한다.
+- 사람·공개 사본·보호 정보·배상 자원을 서로 다른 노선으로 나눈다.
+- 팔대신병 현물 대부분은 원래 지역에 남는다.
+- 현장 회수자 R-1이 가장 약한 호송 노선을 반복 공격한다.
+- 장편은 하나의 계속되는 호송·도피·구조 임무로 묶인다.
+- 마지막에는 완전한 원본보다 현재 생존자를 선택한다.
+- 심소연은 분점 보증 회복을 잃거나 스스로 포기한다.
 
-## 6. 수정 기준
+## 6. 맹점 통제
 
-- 심소연 시점 약 64~70%
-- 선택 시점 최대 4명
-- 완전 조연 변화축 3명, 부분 변화축 2명
-- 각 막에 무협·호송·구조의 육체적 행동축
-- 반복 현장 적대자 1명
-- 심소연의 시작 욕망과 최종 포기 비용 고정
-- 한 신병은 현물 없이, 한 교차는 결론 유보
-- 모든 구간의 과오 고백·정통성 승인 반복 금지
-- 가족·가업을 1·3·5막의 실제 선택 압력으로 사용
+- 심소연 POV 64~70%
+- 선택 POV 최대 4명
+- 완전 조연 변화축 최대 3명
+- 막별 장기 무협 행동축 최소 1개
+- 3장 연속 절차 중심 금지
+- 신병 현물 미등장 최소 1개
+- 결론 유보 교차 최소 1개
+- 현장 적대자 직접 충돌 최소 4회
+- 가족·가업이 선택을 바꾸는 막 최소 3개
+- 마지막 5장 중 물리 위기·운반·구조·방어 최소 3장
 
-## 7. 수정된 8구간 행렬
+## 7. 사용자 결정 대기
 
-- [`../design/OUTLINE-SEGMENT-FUNCTION-MATRIX-v1.md`](../design/OUTLINE-SEGMENT-FUNCTION-MATRIX-v1.md)
+결정 1:
 
-이 행렬은 정본이 아니라 수정 검증용이다.
+- A 보증 회복형
+- B 장기 분산 호송형 — PM 권고
+- C 회수자 추적형
+- D 연해 공동체 방어형
 
-## 8. 남은 본선 작업
+결정 2 — 심소연의 주손실:
 
-1. 플롯 Human Edit 승인 또는 수정
-2. 주인공 시작 욕망·반복 현장 적대자·현재 stakes 고정
-3. 8구간 반복 공식 해체
-4. 무협 행동축과 가족·가업 보강
-5. POV·조연 변화축 축소
-6. 시간·이동·부상·권리·단서 상태 장부
-7. 46~52장 Outline 재조정
-8. 새 Outline 교차감사
+1. 진원표국 분점 보증과 직업적 신용 — PM 권고
+2. 가족 공방의 국가·상단 계약
+3. 어깨 기능과 현장 무공
+4. 과거 보호 대상과의 신뢰
+
+응답 예: `B, 1`
+
+## 8. 승인 뒤 작업
+
+1. 사용자 선택 결정 로그
+2. Plot Master v3
+3. 반복 현장 적대자 4안 비교
+4. 5막·6장기 행동구간 정밀 설계
+5. POV·가족·가업·신병 배치
+6. 시간·이동·부상·권리·단서 장부
+7. 46~52장 Outline 재구축
+8. 독립 교차감사
 9. Outline Human Edit
-10. 전체 설계 최종 감사와 집필 준비 승인
+10. 전체 설계 최종 감사
 
 ## 9. 지금 하지 않는 것
 
+- 기존 50장 Outline 직접 정본화
 - 백과사전식 설정 확장
 - 장면별 대사·묘사·전투 수순
 - 기존 60장안 자동 복원
 - 장편 초고
 
-## 10. 다음 관문
-
-현재 다음 관문은 **플롯 Human Edit**다.
-
-사용자 결정 전에는 50장 Outline을 정본으로 승격하지 않는다.
+사용자 명시 선택 전에는 Plot Master v3를 정본으로 만들지 않는다.
