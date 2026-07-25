@@ -1,19 +1,18 @@
 # 《팔대신병록》 PM 진행 대시보드
 
-상태: `plot-redesign-v3 / fun-gate-not-passed / human-edit-pending`
+상태: `korean-webnovel-plot-redesign / fun-gate-not-passed / human-edit-pending`
 총괄: PM 오케스트레이터
 상위 정책: [`../book_writing.md`](../book_writing.md)
 실행 규칙: [`../CLAUDE.md`](../CLAUDE.md)
+메타 프롬프팅: [`META-PROMPTING-PROTOCOL-v1.md`](META-PROMPTING-PROTOCOL-v1.md)
 범위 고정: [`PROJECT-DESIGN-SCOPE-LOCK-v1.md`](PROJECT-DESIGN-SCOPE-LOCK-v1.md)
 계획 이탈: [`PLAN-DEVIATION-LOG.md`](PLAN-DEVIATION-LOG.md)
-전면 재검토: [`../audit/DESIGN-PACKAGE-REVIEW-v2.md`](../audit/DESIGN-PACKAGE-REVIEW-v2.md)
+한국 웹소설 감사: [`../audit/KOREAN-WEBNOVEL-MARTIAL-MOTIF-AND-SERIAL-FUN-AUDIT-v1.md`](../audit/KOREAN-WEBNOVEL-MARTIAL-MOTIF-AND-SERIAL-FUN-AUDIT-v1.md)
 주인공 이름: [`PROTAGONIST-NAME-DECISION-v1.md`](PROTAGONIST-NAME-DECISION-v1.md)
-모티브·재미 감사: [`../audit/MOTIF-NOVEL-REFERENCE-AND-FUN-AUDIT-v1.md`](../audit/MOTIF-NOVEL-REFERENCE-AND-FUN-AUDIT-v1.md)
-재미 Gate: [`STORY-FUN-GATE-v1.md`](STORY-FUN-GATE-v1.md)
 
 ## 1. 우리가 만드는 것
 
-**장편소설 《팔대신병록》의 완성형 작품 설계 패키지.**
+**한국 플랫폼에서 연재할 무협 웹소설 《팔대신병록》의 완성형 작품 설계 패키지.**
 
 설정 백과사전도 현재 원고도 아니다.
 
@@ -22,9 +21,11 @@
 1. 설정·세계 시스템
 2. 인물·관계
 3. 결말·전체 플롯
-4. Outline
-5. 연속성·누락·과잉·재미 최종 감사
-6. 집필 준비 판정
+4. 무료분 1~25화·소구간
+5. 전체 화수·막별 화수
+6. 웹소설 화 단위 Outline
+7. 연속성·누락·과잉·재미·연독 최종 감사
+8. 집필 준비 판정
 
 ## 2. 현재 위치
 
@@ -32,26 +33,31 @@
 |---|---|---|
 | 작품 헌법·세계·시스템 | `canon` | 유지 |
 | 인물·관계 프레임 | `canon-framework` | 유지, 플롯 통합 재검토 |
-| 주인공 이름 | `서유휘 / synchronization-pending` | 사용자 선택 반영 |
+| 주인공 이름 | `서유휘` | 사용자 결정, 전체 동기화 필요 |
 | 기존 플롯 v2 | `superseded-for-redesign` | 참고 후보 |
-| 플롯 재설계 v3 | `recommended-default / human-edit-pending` | 네 시안 비교 완료 |
-| STORY FUN GATE | `not-passed` | R-1·동료 케미·막별 보상 미설계 |
+| 플롯 재설계 v3 | `recommended-default / human-edit-pending` | B안 PM 권고 |
+| STORY FUN GATE | `not-passed` | R-1·음성·케미·막별 보상 미설계 |
+| 한국 웹소설 화 단위 | `redesign-required` | 무료분·전체 화수 미설계 |
 | 기존 5막·8구간 | `validation-framework` | 비교 자료 |
-| 기존 50장 Outline | `validation-draft / revision-required` | 정식 Gate 통과 아님 |
+| 기존 50장 Outline | `validation-draft / revision-required` | 화 단위 정본 아님 |
 | 장면·원고 | `locked` | 미착수 |
 
-현재 표현은 **핵심 기반 유지, 대서사 구조와 재미 엔진 선택 대기**다.
+현재 표현은 **핵심 기반 유지, 대서사 구조와 한국 웹소설 재미 엔진 선택 대기**다.
 
-## 3. 이번 Gate 완료 항목
+## 3. 실행 프로토콜
 
-- [`PLOT-REDESIGN-SCOPE-FREEZE-v3.md`](PLOT-REDESIGN-SCOPE-FREEZE-v3.md) — 재설계 범위 동결
-- [`../audit/PLOT-REDESIGN-BLIND-SPOT-SWEEP-v3.md`](../audit/PLOT-REDESIGN-BLIND-SPOT-SWEEP-v3.md) — 맹점 훑기
-- [`../audit/PLOT-REDESIGN-PREMORTEM-v3.md`](../audit/PLOT-REDESIGN-PREMORTEM-v3.md) — 먼저 짚을 함정
-- [`../audit/OPEN-SOURCE-NARRATIVE-DESIGN-REFERENCE-v1.md`](../audit/OPEN-SOURCE-NARRATIVE-DESIGN-REFERENCE-v1.md) — 오픈소스 본보기 검토
-- [`../design/PLOT-REDESIGN-FOUR-OPTIONS-v3.md`](../design/PLOT-REDESIGN-FOUR-OPTIONS-v3.md) — 디자인 시안 네 개
-- [`PLOT-REDESIGN-HUMAN-EDIT-PACKET-v3.md`](PLOT-REDESIGN-HUMAN-EDIT-PACKET-v3.md) — 사용자 선택 패킷
-- [`../audit/MOTIF-NOVEL-REFERENCE-AND-FUN-AUDIT-v1.md`](../audit/MOTIF-NOVEL-REFERENCE-AND-FUN-AUDIT-v1.md) — 모티브 소설과 재미 장치 점검
-- [`STORY-FUN-GATE-v1.md`](STORY-FUN-GATE-v1.md) — 재미 통과 기준
+모든 큰 작업은 다음을 거친다.
+
+1. 컨텍스트 덤핑
+2. 결과를 크게 바꾸는 누락 질문 최대 3개
+3. 프롬프트 깎아내기
+4. 역할·목표·제약·성공조건·중지요건·출력 형식 명시
+5. 실행환경별 변환
+6. 맹점 훑기와 프리모텀
+7. 디자인 시안 4개
+8. 사용자 Human Edit
+9. 자기점검과 독립 점검
+10. 계획 이탈 기록
 
 ## 4. 플롯 재설계 네 안
 
@@ -69,62 +75,95 @@ PM 권고 조합:
 - C의 반복 현장 회수자 R-1
 - D의 가족·공방·지역 공동체 영구 손실
 
-## 5. 재미 엔진 권고
+## 5. 한국 웹소설 재미 엔진
 
 표면 장르:
 
-> **호송 모험·추적 무협**
+> **직업 호송 모험·추적 무협**
 
 하부 엔진:
 
 - 역사 미스터리
 - 권리·기록 갈등
-- 가족·가업의 비용
+- 가족·가업 비용
+- 저강도 기환
 
 권고 배합:
 
-- 연재 모험·물리 임무 35%
-- 반복 라이벌 추적 25%
-- 동료 케미·관계 20%
-- 역사 미스터리·재해석 20%
+- 직업·호송 목표 35%
+- 캐릭터 음성·동료 케미·라이벌 30%
+- 세계·세력·재등장 보상 20%
+- 고개념 무협 재해석 15%
 
-현재 강점:
+## 6. 모티브 참고 위계
 
-- 조선소 붕괴 훅
+### 1차 — 한국 무협 웹소설 회차 재미
+
+- 《환생표사》
+- 《광마회귀》
+- 《화산귀환》
+- 《무림서부》
+- 《일타강사 백사부》
+- 《절대회귀》
+- 《시한부 천재가 살아남는 법》
+
+### 2차 — 세계·세력·장기 교차 보상
+
+- 한백림 《한백무림서》
+  - 《무당마검》
+  - 《화산질풍검》
+  - 《천잠비룡포》
+
+### 3차 — 장르 원형·보조 구조
+
+- 김용·고룡 등 중화권 무협
+- 《수호전》
+- 서구 모험·미스터리 장편
+
+## 7. 현재 강점과 미통과 이유
+
+강점:
+
+- 조선소 붕괴의 물리 훅
+- 서유휘의 표국·인계 직업성
 - 장기 분산 호송 행동축
 - 원본과 생존자 사이의 마지막 선택
 - 팔대신병의 비수집형 활용
 
-현재 미통과 이유:
+미통과:
 
-- R-1이 아직 기능일 뿐 인물이 아님
+- R-1이 인물이 아니라 기능
+- 서유휘의 말맛·행동 리듬 미설계
 - 동료 케미와 생활 유머 미설계
-- 막별 작은 승리와 기대 보상 미설계
-- 독자 전면 운반 대상이 아직 많음
-- 다중 노선이 전략보다 행정으로 보일 위험
+- 무료분 1~5화 전환 훅 미설계
+- 10~15화 소구간 보상 미설계
+- 독자 전면 운반 대상이 많음
+- 기존 50장 구조와 웹소설 화 단위 혼용
 
-## 6. 모티브 소설 핵심군
+## 8. 한국 웹소설 FUN GATE 기준
 
-1군:
+1~5화:
 
-- 김용 《사조영웅전》 — 역사와 강호 모험, 재등장 보상
-- 고룡 《칠종무기》 — 무기와 인간 질문, 강한 대결 훅
-- 《수호전》 — 직업·별호·강호 앙상블
-- 뒤마 《삼총사》 — 임무 연쇄, 동료 케미, 반복 적대자
-- 뒤마 《몽테크리스토 백작》 — 장기 약속과 감정적 보상
-- 판관 디 시리즈 — 역사 중국 미스터리와 현장 행동
+- 서유휘·표사·인계가 기억됨
+- 조선소 위기와 잃을 대상이 구체적
+- 첫 적대선 또는 강한 의문 존재
+- 5화 끝에 장기 임무·역전·전환이 선명
 
-2군:
+6~15화:
 
-- 《장미의 이름》 — 기관·문서 미스터리, 설명 과잉 경고
-- 《록 라모라의 우아한 계략》 — 계획 붕괴와 팀 애착
-- 《아미나 알시라피의 모험》 — 여성 주인공·가족·해상 모험
-- 《왕들의 은총》 — 서로 다른 정의관과 병참
-- 《바람의 그림자》 — 과거 기록과 현재 감정 연결
+- 첫 호송 목표와 노선 명확
+- R-1 첫 직접 충돌
+- 핵심 동료 두 명 이상 행동으로 각인
+- 통쾌한 성공 1개, 비가역 손실 1개
 
-모티브는 구조만 추출하고 인물·장면·대사·고유 설정은 복사하지 않는다.
+16~25화:
 
-## 7. 사용자 결정 대기
+- 첫 소구간 결산
+- 조선소 사건과 팔대신병·쇄조도 연결
+- 전투·감정·미스터리 보상 중 두 개 이상 지급
+- 다음 막의 질문이 선명
+
+## 9. 사용자 결정 대기
 
 결정 1:
 
@@ -140,30 +179,32 @@ PM 권고 조합:
 3. 어깨 기능과 현장 무공
 4. 과거 보호 대상과의 신뢰
 
-응답 예: `B, 1`
+명시 응답 예: `B, 1`
 
-## 8. 승인 뒤 작업
+## 10. 승인 뒤 작업
 
-1. 사용자 선택 결정 로그
-2. R-1 디자인 4안
-3. 핵심 동료 케미 4안
-4. 5막별 재미 약속·반전·작은 승리·큰 손실
-5. 독자 전면 운반 대상 최대 세 종류로 압축
-6. FUN GATE 재감사
-7. Plot Master v3
-8. POV·가족·가업·신병 배치
-9. 시간·이동·부상·권리·단서 장부
-10. 46~52장 Outline 재구축
-11. 독립 교차감사
-12. Outline Human Edit
-13. 전체 설계 최종 감사
+1. 선택 결정 로그
+2. 서유휘 이름 전체 동기화
+3. R-1 디자인 4안
+4. 서유휘 음성·행동 리듬 4안
+5. 핵심 동료 케미 4안
+6. 무료분 1~5화 훅 4안
+7. 무료분 1~25화 소구간 설계
+8. 전체 화수·막별 화수 후보 4안
+9. FUN GATE 재감사
+10. Plot Master v3
+11. 웹소설 화 단위 Outline
+12. 시간·이동·부상·권리·단서·절단 장부
+13. 독립 교차감사와 Outline Human Edit
+14. 전체 설계 최종 감사
 
-## 9. 지금 하지 않는 것
+## 11. 지금 하지 않는 것
 
 - 기존 50장 Outline 직접 정본화
 - 백과사전식 설정 확장
-- 장면별 대사·묘사·전투 수순
+- 장면별 완성 대사·묘사·전투 수순
 - 기존 60장안 자동 복원
+- 웹소설 화와 출간 장 혼용
 - 장편 초고
 
-사용자 명시 선택 전에는 Plot Master v3를 정본으로 만들지 않는다.
+사용자 명시 선택 전에는 Plot Master v3와 웹소설 Outline을 정본으로 만들지 않는다.
