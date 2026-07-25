@@ -50,7 +50,7 @@
 | 영향 | 장 배분·시점 비율·감사 근거 불일치 |
 | 임시 조치 | 50장 작업안으로 기능 행렬 복구, Outline을 수정 초안으로 재분류 |
 | 영구 조치 | 장 수·헤더·범위·링크 무결성 검사를 Gate 완료 조건에 추가 |
-| 상태 | mitigated — 최종 장 수 재결정 필요 |
+| 상태 | mitigated — 웹소설 화 단위로 재설계 필요 |
 | 관련 파일 | `design/OUTLINE-SEGMENT-FUNCTION-MATRIX-v1.md`, `audit/DESIGN-PACKAGE-REVIEW-v2.md` |
 
 ---
@@ -65,7 +65,7 @@
 | 원인 | 긴 문서를 한 번에 작성·검증하려 한 도구 운용 문제 |
 | 영향 | 구간 행렬 일부 누락, 감사가 실제 결손을 놓침 |
 | 임시 조치 | 막·구간별 파일 분리, 부분 조회로 실제 끝부분 확인 |
-| 영구 조치 | 긴 산출물은 150~250줄 단위로 분리하고, 생성 뒤 첫·중간·마지막 구간을 재조회 |
+| 영구 조치 | 긴 산출물은 150~250줄 단위로 분리하고 생성 뒤 첫·중간·마지막 구간을 재조회 |
 | 상태 | resolved for process / existing files still under review |
 | 관련 파일 | `design/OUTLINE-CHAPTER-FUNCTIONS-ACT1-3-v1.md`, `design/OUTLINE-CHAPTER-FUNCTIONS-ACT4-5-v1.md`, `CLAUDE.md` |
 
@@ -84,6 +84,38 @@
 | 영구 조치 | Gate 전 `맹점 훑기`, `먼저 짚을 함정`, 네 시안 비교를 의무화 |
 | 상태 | resolved for audit protocol |
 | 관련 파일 | `audit/DESIGN-PACKAGE-REVIEW-v2.md`, `CLAUDE.md` |
+
+---
+
+## DEV-20260726-06 — 한국 웹소설 형식 기준 누락
+
+| 항목 | 내용 |
+|---|---|
+| 발생 위치 | 모티브 소설 감사·50장 Outline 계획 |
+| 원래 계획 | 재미있는 무협 장편 설계를 위한 모티브와 Outline을 정리 |
+| 실제 변화 | 고전·해외 장편을 1차 모티브로 두고 단행본식 `장`과 한국 웹소설 `화`를 혼용함 |
+| 원인 | 목표 매체가 한국 플랫폼 웹소설이라는 조건을 설계 단위와 참고 위계에 충분히 반영하지 않음 |
+| 영향 | 무료분 훅·회차 절단·소구간 보상·연독 기준이 누락되고 46~52장 구조가 과도하게 앞섬 |
+| 임시 조치 | 한백무림서와 한국 무협 웹소설을 1차 참고로 재분류하고 46~52장 확정을 보류 |
+| 영구 조치 | `book_writing.md`와 `CLAUDE.md`에 한국 웹소설 화 단위·무료분 Gate·참고 위계를 고정 |
+| 상태 | resolved for policy / webnovel outline pending |
+| 관련 파일 | `audit/KOREAN-WEBNOVEL-MARTIAL-MOTIF-AND-SERIAL-FUN-AUDIT-v1.md`, `book_writing.md`, `CLAUDE.md` |
+
+---
+
+## DEV-20260726-07 — 컨텍스트 덤프와 실행 프롬프트 미분리
+
+| 항목 | 내용 |
+|---|---|
+| 발생 위치 | 다중 에이전트 설계·감사 작업 전반 |
+| 원래 계획 | 관련 문서를 충분히 읽고 에이전트에게 작업을 지시 |
+| 실제 변화 | 많은 컨텍스트를 읽는 것과 좋은 실행 프롬프트를 만드는 절차가 분리되지 않아, 중복·구버전 상태·모호한 성공조건이 프롬프트에 섞일 위험이 있었음 |
+| 원인 | 컨텍스트 덤핑→질문 유도→프롬프트 축약→환경별 변환→독립 점검 절차 부재 |
+| 영향 | 에이전트가 목표와 다른 산출물을 잘 만들거나, 중지해야 할 지점에서 임의로 진행할 위험 |
+| 임시 조치 | 메타 프롬프팅 프로토콜 작성, `CLAUDE.md` 필수 순서에 연결 |
+| 영구 조치 | 모든 큰 작업에 역할·목표·제약·성공조건·중지요건·출력·점검표를 의무화 |
+| 상태 | resolved for protocol |
+| 관련 파일 | `operations/META-PROMPTING-PROTOCOL-v1.md`, `CLAUDE.md` |
 
 ---
 
