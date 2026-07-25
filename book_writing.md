@@ -1,15 +1,16 @@
 # 《팔대신병록》 집필·설계 최상위 정책
 
-상태: `canon-policy / design-review-correction-active`
+상태: `canon-policy / korean-webnovel-redesign-active`
 역할: 저장소 최상위 운영 정책
 총괄: PM 오케스트레이터
+실행 규칙: [`CLAUDE.md`](CLAUDE.md)
 범위 고정: [`operations/PROJECT-DESIGN-SCOPE-LOCK-v1.md`](operations/PROJECT-DESIGN-SCOPE-LOCK-v1.md)
-재검토: [`audit/DESIGN-PACKAGE-REVIEW-v2.md`](audit/DESIGN-PACKAGE-REVIEW-v2.md)
-상태 재분류: [`operations/DESIGN-REVIEW-STATUS-RESET-v2.md`](operations/DESIGN-REVIEW-STATUS-RESET-v2.md)
+메타 프롬프팅: [`operations/META-PROMPTING-PROTOCOL-v1.md`](operations/META-PROMPTING-PROTOCOL-v1.md)
+한국 웹소설 감사: [`audit/KOREAN-WEBNOVEL-MARTIAL-MOTIF-AND-SERIAL-FUN-AUDIT-v1.md`](audit/KOREAN-WEBNOVEL-MARTIAL-MOTIF-AND-SERIAL-FUN-AUDIT-v1.md)
 
 ## 1. 프로젝트 목표
 
-현재 목표는 **장편소설 《팔대신병록》을 쓰기 위한 완성형 작품 설계 패키지**다.
+현재 목표는 **한국 플랫폼에서 연재할 장편 무협 웹소설 《팔대신병록》의 완성형 작품 설계 패키지**다.
 
 설정 백과사전이나 원고 자체가 현재 목표가 아니다.
 
@@ -18,10 +19,12 @@
 1. 작품 헌법과 세계·시스템 핵심 설정
 2. 인물·관계 설계
 3. 결말·전체 플롯 설계와 Human Edit
-4. Outline 설계
-5. 연표·단서·부상·이동·권리 최종 감사
-6. 사용자 집필 준비 승인
-7. 그 뒤 원고
+4. 무료분 1~25화와 소구간 설계
+5. 전체 화수·막별 화수 후보 비교
+6. 웹소설 화 단위 Outline
+7. 연표·단서·부상·이동·권리·절단·연독 최종 감사
+8. 사용자 집필 준비 승인
+9. 그 뒤 원고
 
 ## 2. 기본 원칙
 
@@ -31,74 +34,120 @@
 - 중요 설계는 복수안·전문가 감사·사용자 Human Edit를 거친다.
 - 사용자의 `진행`·`이어서`를 선택안의 명시 승인으로 자동 해석하지 않는다.
 - 역사·연표·거리·가격·권리·관계·부상을 장부로 검증한다.
+- 재미·연독·회차 절단을 설정 정합성과 같은 수준의 Gate로 다룬다.
+- 단행본의 `장`과 웹소설의 `화`를 같은 단위로 취급하지 않는다.
 - `canon` 변경은 영향 범위와 재감사를 기록한다.
 - Outline과 최종 설계 감사 전에는 원고를 쓰지 않는다.
+- 외부 에이전트 작업은 컨텍스트 팩·압축 프롬프트·성공조건·중지요건·점검표를 갖춘다.
 
-## 3. 전면 재검토 뒤 현재 상태
+## 3. 현재 상태
 
 - 설정·세계 시스템 핵심: `canon / 유지`
 - 인물·관계 프레임: `canon-framework / 유지`
-- 결말·플롯: `recommended-default / human-edit-pending`
-- 5막·8구간: `validation-framework`
-- 50장 Outline: `validation-draft / revision-required`
-- 기존 Outline 교차감사 v1: `superseded`
+- 주인공 이름: `서유휘 / 사용자 결정`
+- 기존 플롯 v2: `superseded-for-redesign`
+- 플롯 재설계 v3: `recommended-default / human-edit-pending`
+- B 장기 분산 호송형: `PM 권고 / 정본 아님`
+- STORY FUN GATE: `not-passed`
+- 기존 5막·8구간: `validation-framework`
+- 기존 50장 Outline: `validation-draft / revision-required`
+- 46~52장 기준: `on-hold / webnovel-unit-redesign-required`
 - 장면·대사·원고: `locked`
 
-플롯 Human Edit 승인 파일이 없으므로 Plot Gate는 정본 통과 상태가 아니다.
+플롯 Human Edit 승인 결정이 없으므로 Plot Master와 Outline은 정본 통과 상태가 아니다.
 
 ## 4. 문서 위계
 
 1. 최신 사용자 결정
 2. `book_writing.md`
-3. `operations/PROJECT-DESIGN-SCOPE-LOCK-v1.md`
-4. `audit/DESIGN-PACKAGE-REVIEW-v2.md`
-5. `operations/DESIGN-REVIEW-STATUS-RESET-v2.md`
-6. `design/SETTING-BIBLE-v2.0-MASTER.md`
-7. `design/CHARACTER-BIBLE-v2.0-MASTER.md`
-8. `operations/PLOT-HUMAN-EDIT-PACKET-v2.md`
-9. 플롯 후보·감사 문서
-10. Outline 검증 초안
-11. `lore_index.md`
-12. 감사·지원 모듈
-13. `원고_index.md`
-14. 백로그·과거 장면·초고 참고안
+3. `CLAUDE.md`
+4. `operations/PROJECT-DESIGN-SCOPE-LOCK-v1.md`
+5. `operations/META-PROMPTING-PROTOCOL-v1.md`
+6. `audit/KOREAN-WEBNOVEL-MARTIAL-MOTIF-AND-SERIAL-FUN-AUDIT-v1.md`
+7. `audit/DESIGN-PACKAGE-REVIEW-v2.md`
+8. `operations/DESIGN-REVIEW-STATUS-RESET-v2.md`
+9. `design/SETTING-BIBLE-v2.0-MASTER.md`
+10. `design/CHARACTER-BIBLE-v2.0-MASTER.md`
+11. 플롯 재설계 후보·Human Edit 문서
+12. 기존 플롯·Outline 검증 초안
+13. `lore_index.md`
+14. 감사·지원 모듈
+15. `원고_index.md`
+16. 백로그·과거 장면·초고 참고안
 
 ## 5. 유지하는 설계 핵심
 
 - 전통 무협 + 역사 미스터리 + 저강도 기환
 - 표국의 인계 실무를 중심으로 한 주인공 구조
+- 주인공 정식 이름 `서유휘`
 - 팔대신병의 잔흔·보관·계승·책임
 - 국가·강호·상업·지역 공동체의 충돌
-- 심소연의 직업·과오·신체 제약
+- 서유휘의 직업·과오·신체 제약
 - 사문경·위철산·장계엄의 독립 적대 논리
 - 단계적 합증·분산 귀환을 유력 결말 후보로 검증
+- B 장기 분산 호송형을 유력 대서사 후보로 검증
 
-## 6. 재검토에서 확인된 핵심 문제
+## 6. 한국 웹소설 참고 위계
 
-1. 플롯 승인 없이 Outline Gate가 개방됨
-2. 8구간 행렬·48/50장·카드 필드의 문서 무결성 문제
+### 1차 — 회차 재미와 연독
+
+- 《환생표사》 — 직업·호송 목표의 명료함
+- 《광마회귀》 — 주인공 음성·대화·반복 관계
+- 《화산귀환》 — 장기 욕망·소구간 보상·집단 애착
+- 《무림서부》 — 한 문장 차별점과 장르 재해석
+- 《일타강사 백사부》 — 관계 보상·조연 성장·휴식 리듬
+- 《절대회귀》 — 선명한 장기 목표와 적대선
+- 《시한부 천재가 살아남는 법》 — 신체 제한·시간 압력·성장 비용
+
+### 2차 — 세계·세력·장기 교차 보상
+
+- 한백림 《한백무림서》
+  - 《무당마검》
+  - 《화산질풍검》
+  - 《천잠비룡포》
+
+한백무림서는 회차 절단보다 세계 공유·무공 계보·세력·재등장 보상의 주요 설계 기준으로 사용한다.
+
+### 3차 — 장르 원형과 보조 구조
+
+- 김용·고룡 등 중화권 무협
+- 《수호전》
+- 서구 모험·미스터리 장편
+
+해외 작품은 임무·라이벌·수사·결말의 보조 참고이며 한국 웹소설 회차 리듬보다 우선하지 않는다.
+
+## 7. 현재 핵심 문제
+
+1. 플롯 승인 없이 Outline Gate가 개방된 전례
+2. 8구간·48/50장·필수 필드의 문서 무결성 문제
 3. 문서·권리 절차가 무협 행동보다 전면화될 위험
 4. `신병·전문가·과오` 반복 공식
-5. 직접 맞서는 반복 현장 적대자 부재
-6. 심소연의 시작 욕망과 능동 인과 부족
-7. 심소연 시점 27/50장, 54%로 중심성 부족
-8. 금릉·서남의 독립 조사감과 권역 순례화
-9. 최종부가 행정적 분류로 끝날 위험
-10. 가족·가업이 인물 정본보다 Outline에서 약함
+5. 반복 현장 적대자 R-1 미설계
+6. 서유휘의 말맛·행동 리듬 미설계
+7. 핵심 동료 케미·생활 유머 미설계
+8. 가족·가업이 실제 선택 비용으로 약함
+9. 결말이 행정적 분류로 끝날 위험
+10. 한국 웹소설 무료분·화 절단·소구간 보상 미설계
+11. 기존 46~52장 구조와 웹소설 화 단위 혼용
 
-## 7. 수정 기준
+## 8. 수정 기준
 
-- 심소연 시점 목표: 약 64~70%
-- 선택 시점 인물: 최대 4명
-- 완전한 조연 변화축: 3명, 부분 변화축: 2명
-- 각 막에 육체적 목표를 가진 무협·호송·구조 행동축 배치
-- 모든 구간에서 과오 고백·정통성 승인 반복 금지
-- 한 신병은 현물 없이 기능하고 한 교차는 결론 유보
-- 반복 현장 적대자 1명 설계
-- 심소연의 시작 욕망과 최종 포기 비용 고정
+- 서유휘 시점 약 64~70%
+- 선택 시점 최대 4명
+- 완전 조연 변화축 3명, 부분 변화축 2명
+- 각 막에 무협·호송·구조의 장기 행동축
+- 모든 구간의 과오 고백·정통성 승인 반복 금지
+- 신병 한 개는 현물 없이 기능
+- 신병 교차 한 개는 결론 유보
+- 반복 현장 적대자 1명과 직접 충돌 최소 4회
+- 서유휘의 시작 욕망과 최종 포기 비용 고정
 - 결말 제도는 물리적 위기의 결과로 발생
+- 1~5화 안에 주인공·직업·위기·장기 목표 각인
+- 10~15화 안에 첫 소구간 결산
+- 회차마다 목표·압력·선택·다음 질문 중 최소 3개
+- 막마다 통쾌한 승리와 서유휘 책임에서 비롯된 손실을 각각 최소 1개
 
-## 8. 설정 정본의 역할
+## 9. 설정 정본의 역할
 
 설정 정본은 다음을 제공한다.
 
@@ -108,7 +157,7 @@
 - 기록·명성·가격·권리·보관 규칙
 - 팔대신병과 쇄조도 원사건의 핵심
 
-다음은 실제 수정 Outline에서 필요할 때만 국소 상세화한다.
+다음은 실제 플롯·무료분·Outline에서 필요할 때만 국소 상세화한다.
 
 - 개별 문파의 세부 무공
 - 개별 장소·객잔·시장·음식·의복
@@ -116,35 +165,29 @@
 - 가격·거리·관직·방언의 구체값
 - B/C 세력의 고유명과 인물
 
-## 9. 플롯·Outline 처리
-
-현재 PM 권고는 유지하되 아직 정본이 아니다.
-
-- 결말: 단계적 합증·분산 귀환
-- 대서사: 5막·8구간
-- 첫 사건: 조선소 붕괴·이중 인계
-- 핵심 인물 필수 사망 없음
-- 최종부: 쇄조도 현장 검증 + 복수 거점 결산
-
-50장 기능표는 구조 검증 자료로 보존하며 다음 수정 전 확정하지 않는다.
-
 ## 10. 다음 작업 순서
 
-1. 플롯 Human Edit 승인 또는 수정
-2. 심소연 시작 욕망·반복 현장 적대자·현재 stakes 설계
-3. 8구간 반복 공식 해체
-4. 무협 행동축·가족·가업 보강
-5. POV·조연 변화축 축소
-6. 시간·이동·부상·권리·단서 상태 장부
-7. 46~52장 Outline 재조정
-8. 새 교차감사와 Outline Human Edit
-9. 집필 준비 판정
+1. B안·주손실 Human Edit
+2. 서유휘 이름 전체 동기화
+3. R-1 디자인 4안
+4. 서유휘 음성·행동 리듬 4안
+5. 핵심 동료 케미 4안
+6. 무료분 1~5화 훅 디자인 4안
+7. 무료분 1~25화 소구간 설계
+8. 전체 화수·막별 화수 후보 4안
+9. FUN GATE 재감사
+10. Plot Master v3
+11. 웹소설 화 단위 Outline
+12. 시간·이동·부상·권리·단서·절단 장부
+13. 독립 교차감사와 Outline Human Edit
+14. 전체 설계 최종 감사와 집필 준비 판정
 
 ## 11. 원고 잠금
 
 다음까지 원고는 잠근다.
 
 - 플롯 Human Edit
-- 수정 Outline Gate 통과
-- 최종 연속성 감사
+- FUN GATE 통과
+- 웹소설 화 단위 Outline 통과
+- 최종 연속성·연독 감사
 - 사용자 원고 진행 승인
