@@ -1,193 +1,186 @@
 # 《팔대신병록》 집필·설계 최상위 정책
 
-상태: `canon-policy / korean-webnovel-redesign-active`
+상태: `canon-policy / epic-fate-braided-tonal-reset`
 역할: 저장소 최상위 운영 정책
 총괄: PM 오케스트레이터
 실행 규칙: [`CLAUDE.md`](CLAUDE.md)
-범위 고정: [`operations/PROJECT-DESIGN-SCOPE-LOCK-v1.md`](operations/PROJECT-DESIGN-SCOPE-LOCK-v1.md)
 메타 프롬프팅: [`operations/META-PROMPTING-PROTOCOL-v1.md`](operations/META-PROMPTING-PROTOCOL-v1.md)
-한국 웹소설 감사: [`audit/KOREAN-WEBNOVEL-MARTIAL-MOTIF-AND-SERIAL-FUN-AUDIT-v1.md`](audit/KOREAN-WEBNOVEL-MARTIAL-MOTIF-AND-SERIAL-FUN-AUDIT-v1.md)
+작법 에이전트: [`operations/NARRATIVE-CRAFT-AGENT-ORCHESTRATION-v1.md`](operations/NARRATIVE-CRAFT-AGENT-ORCHESTRATION-v1.md)
+작품 감각 재설정: [`operations/TONAL-DIRECTION-RESET-DECISION-v1.md`](operations/TONAL-DIRECTION-RESET-DECISION-v1.md)
+대하 무협 4안: [`design/TIANLONG-BABU-TONAL-VISION-FOUR-OPTIONS-v1.md`](design/TIANLONG-BABU-TONAL-VISION-FOUR-OPTIONS-v1.md)
+완성 구성표: [`operations/DESIGN-PACKAGE-COMPLETION-MATRIX-v2.md`](operations/DESIGN-PACKAGE-COMPLETION-MATRIX-v2.md)
 
 ## 1. 프로젝트 목표
 
-현재 목표는 **한국 플랫폼에서 연재할 장편 무협 웹소설 《팔대신병록》의 완성형 작품 설계 패키지**다.
+현재 목표는 **한국 플랫폼에서 연재할 대하 무협 웹소설 《팔대신병록》의 완성형 작품 설계 패키지**다.
 
-설정 백과사전이나 원고 자체가 현재 목표가 아니다.
+작품 감각 목표:
 
-본선 순서:
+> 서로 다른 삶과 비극을 가진 복수의 영웅이 문파·혈연·정체·국가·팔대신병을 통해 교차하는 호쾌하고 비애감 있는 무협.
 
-1. 작품 헌법과 세계·시스템 핵심 설정
-2. 인물·관계 설계
-3. 결말·전체 플롯 설계와 Human Edit
-4. 무료분 1~25화와 소구간 설계
-5. 전체 화수·막별 화수 후보 비교
-6. 웹소설 화 단위 Outline
-7. 연표·단서·부상·이동·권리·절단·연독 최종 감사
-8. 사용자 집필 준비 승인
-9. 그 뒤 원고
+《천룡팔부》의 인물·반전·장면을 복사하지 않는다. 참고하는 것은:
 
-## 2. 기본 원칙
+- 복수 영웅의 독립 서사와 운명 교차
+- 개인→가족·사승→문파·공동체→민족·국가로 확대되는 갈등
+- 선의·의리·욕망이 파국을 만드는 인과
+- 무공과 정체의 결합
+- 호쾌함·유머·비애·비극의 공존
 
-- 설정은 인물 선택·플롯 인과·전투·이동·권리 판정을 지탱할 만큼 깊게 만든다.
-- 사용하지 않을 도시·문파·초식·도감은 미리 전부 채우지 않는다.
-- 아이디어·후보·참고안은 정본과 분리한다.
-- 중요 설계는 복수안·전문가 감사·사용자 Human Edit를 거친다.
-- 사용자의 `진행`·`이어서`를 선택안의 명시 승인으로 자동 해석하지 않는다.
-- 역사·연표·거리·가격·권리·관계·부상을 장부로 검증한다.
-- 재미·연독·회차 절단을 설정 정합성과 같은 수준의 Gate로 다룬다.
-- 단행본의 `장`과 웹소설의 `화`를 같은 단위로 취급하지 않는다.
-- `canon` 변경은 영향 범위와 재감사를 기록한다.
-- Outline과 최종 설계 감사 전에는 원고를 쓰지 않는다.
-- 외부 에이전트 작업은 컨텍스트 팩·압축 프롬프트·성공조건·중지요건·점검표를 갖춘다.
+한국 웹소설의 명확한 독자 앵커·회차 보상·무료분 진입은 유지한다.
 
-## 3. 현재 상태
+## 2. 우리가 만드는 것
 
-- 설정·세계 시스템 핵심: `canon / 유지`
-- 인물·관계 프레임: `canon-framework / 유지`
-- 주인공 이름: `서유휘 / 사용자 결정`
-- 기존 플롯 v2: `superseded-for-redesign`
-- 플롯 재설계 v3: `recommended-default / human-edit-pending`
-- B 장기 분산 호송형: `PM 권고 / 정본 아님`
-- STORY FUN GATE: `not-passed`
-- 기존 5막·8구간: `validation-framework`
-- 기존 50장 Outline: `validation-draft / revision-required`
-- 46~52장 기준: `on-hold / webnovel-unit-redesign-required`
-- 장면·대사·원고: `locked`
+본선 산출물:
 
-플롯 Human Edit 승인 결정이 없으므로 Plot Master와 Outline은 정본 통과 상태가 아니다.
+1. 작품 감각과 한 문장 약속
+2. 결말과 역산 인과
+3. 공동 주인공 구조와 인물별 독립 결말
+4. 맥거핀·비밀·설치 회수 구조
+5. 세계·무공·기환·팔대신병 핵심
+6. 인물·관계·세력
+7. 전체 플롯
+8. 총화수·액트·서브액트
+9. 무료분 1~25화
+10. 웹소설 화 단위 Outline
+11. 용어·집필법
+12. 시간·이동·부상·정보·관계·권리·절단 장부
+13. 작법별·FUN·연속성 최종 감사
+14. 집필 준비 판정
 
-## 4. 문서 위계
+현재 목표가 아닌 것:
+
+- 설정 백과사전 완성
+- 장면별 완성 대사·묘사
+- 장편 초고
+- 과거 60장·50장안 자동 복원
+
+## 3. 기본 원칙
+
+- 최신 사용자 결정이 과거 승인안보다 우선한다.
+- 작품 감각을 정하기 전에 표국·조선소·호송 구조를 정본화하지 않는다.
+- 결말을 먼저 설계하고 플롯·액트·화수를 역산한다.
+- 맥거핀은 인물을 움직이는 장치이며 작품의 감정 핵심을 대체하지 않는다.
+- 팔대신병을 하나씩 수집하는 퀘스트로 만들지 않는다.
+- 중요 설계는 4안·Human Edit·독립 감사를 거친다.
+- 다중 주인공을 사용해도 한국 웹소설 독자 앵커를 명확히 한다.
+- 설정은 인물 선택·플롯 인과·전투·회차 보상에 필요한 만큼 활성화한다.
+- 재미·연독·회차 절단은 설정 정합성과 같은 수준의 Gate다.
+- 사용자의 `진행`·`이어서`를 고영향 선택 승인으로 자동 해석하지 않는다.
+- 원고는 설계 패키지 승인 전까지 잠근다.
+
+## 4. 현재 상태
+
+유지:
+
+- 세계·무공·기환·팔대신병 핵심: `canon`
+- 주인공 이름 서유휘: `user-selected`
+- 서유휘의 검표·인계 경력, 과오, 신체 제약: `reusable-canon-framework`
+- 기존 세력·지역·인물 자산: `reusable-candidates`
+
+효력 정지·재검토:
+
+- 표국 중심 대서사: `suspended-for-tonal-reassessment`
+- 조선소 1화 시작: `candidate-only`
+- B 장기 분산 호송: `deferred-candidate`
+- 진아령 장기 라이벌: `reusable-rival-candidate`
+- 분점 보증 최종 손실: `candidate-only`
+- 기존 무료분·50장 Outline: `validation-reference / not-canon`
+
+새 Gate:
+
+- 작품 감각: `four-options / human-edit-pending`
+- 결말: `reopened`
+- 공동 주인공: `not-designed`
+- 맥거핀·미스터리: `not-designed`
+- 총화수·액트·서브액트: `locked-pending-foundation`
+- 원고: `locked`
+
+## 5. 작품 감각 후보
+
+- T-A: 서유휘 단일 주인공 대하형
+- T-B: **1+2 삼인 운명교차형 — PM 권고**
+- T-C: 3인 동등 주인공형
+- T-D: 팔인 군상 운명륜형
+
+T-B 작업값:
+
+- 서유휘 55~65%
+- 공동 주인공 B 17~23%
+- 공동 주인공 C 17~23%
+
+표국은 서유휘의 삶과 능력으로 유지할 수 있지만 작품 전체 장르로 확정하지 않는다.
+
+## 6. 작법·에이전트 원칙
+
+전문 에이전트:
+
+1. 결말 설계자
+2. 맥거핀·미스터리 설계자
+3. 운명 직조 설계자
+4. 인물 비극·관계 설계자
+5. 무협 액션 설계자
+6. 한국 웹연재 설계자
+7. 세계·용어 통합 설계자
+8. 연속성 감사자
+9. 반대감사자
+10. PM 오케스트레이터
+
+필수 작법:
+
+- Ending First / Backward Design
+- MacGuffin
+- Braided Narrative
+- Want / Need / Lie / Wound
+- Promise / Progress / Payoff
+- Try / Fail Cycles
+- Scene / Sequel
+- Battle as Argument
+- Setup / Payoff Ledger
+- 회차 절단 설계
+
+작성 에이전트와 감사 에이전트를 분리한다.
+
+## 7. 문서 위계
 
 1. 최신 사용자 결정
 2. `book_writing.md`
-3. `CLAUDE.md`
-4. `operations/PROJECT-DESIGN-SCOPE-LOCK-v1.md`
-5. `operations/META-PROMPTING-PROTOCOL-v1.md`
-6. `audit/KOREAN-WEBNOVEL-MARTIAL-MOTIF-AND-SERIAL-FUN-AUDIT-v1.md`
-7. `audit/DESIGN-PACKAGE-REVIEW-v2.md`
-8. `operations/DESIGN-REVIEW-STATUS-RESET-v2.md`
-9. `design/SETTING-BIBLE-v2.0-MASTER.md`
-10. `design/CHARACTER-BIBLE-v2.0-MASTER.md`
-11. 플롯 재설계 후보·Human Edit 문서
-12. 기존 플롯·Outline 검증 초안
-13. `lore_index.md`
-14. 감사·지원 모듈
-15. `원고_index.md`
-16. 백로그·과거 장면·초고 참고안
+3. `operations/TONAL-DIRECTION-RESET-DECISION-v1.md`
+4. `CLAUDE.md`
+5. `operations/NARRATIVE-CRAFT-AGENT-ORCHESTRATION-v1.md`
+6. `operations/META-PROMPTING-PROTOCOL-v1.md`
+7. `operations/PM-PROGRESS-DASHBOARD.md`
+8. 작품 감각·결말·공동 주인공·맥거핀 Human Edit 결정
+9. 설정·인물 정본
+10. 플롯·Outline 후보
+11. 과거 참고안
 
-## 5. 유지하는 설계 핵심
+## 8. 새 본선 순서
 
-- 전통 무협 + 역사 미스터리 + 저강도 기환
-- 표국의 인계 실무를 중심으로 한 주인공 구조
-- 주인공 정식 이름 `서유휘`
-- 팔대신병의 잔흔·보관·계승·책임
-- 국가·강호·상업·지역 공동체의 충돌
-- 서유휘의 직업·과오·신체 제약
-- 사문경·위철산·장계엄의 독립 적대 논리
-- 단계적 합증·분산 귀환을 유력 결말 후보로 검증
-- B 장기 분산 호송형을 유력 대서사 후보로 검증
-
-## 6. 한국 웹소설 참고 위계
-
-### 1차 — 회차 재미와 연독
-
-- 《환생표사》 — 직업·호송 목표의 명료함
-- 《광마회귀》 — 주인공 음성·대화·반복 관계
-- 《화산귀환》 — 장기 욕망·소구간 보상·집단 애착
-- 《무림서부》 — 한 문장 차별점과 장르 재해석
-- 《일타강사 백사부》 — 관계 보상·조연 성장·휴식 리듬
-- 《절대회귀》 — 선명한 장기 목표와 적대선
-- 《시한부 천재가 살아남는 법》 — 신체 제한·시간 압력·성장 비용
-
-### 2차 — 세계·세력·장기 교차 보상
-
-- 한백림 《한백무림서》
-  - 《무당마검》
-  - 《화산질풍검》
-  - 《천잠비룡포》
-
-한백무림서는 회차 절단보다 세계 공유·무공 계보·세력·재등장 보상의 주요 설계 기준으로 사용한다.
-
-### 3차 — 장르 원형과 보조 구조
-
-- 김용·고룡 등 중화권 무협
-- 《수호전》
-- 서구 모험·미스터리 장편
-
-해외 작품은 임무·라이벌·수사·결말의 보조 참고이며 한국 웹소설 회차 리듬보다 우선하지 않는다.
-
-## 7. 현재 핵심 문제
-
-1. 플롯 승인 없이 Outline Gate가 개방된 전례
-2. 8구간·48/50장·필수 필드의 문서 무결성 문제
-3. 문서·권리 절차가 무협 행동보다 전면화될 위험
-4. `신병·전문가·과오` 반복 공식
-5. 반복 현장 적대자 R-1 미설계
-6. 서유휘의 말맛·행동 리듬 미설계
-7. 핵심 동료 케미·생활 유머 미설계
-8. 가족·가업이 실제 선택 비용으로 약함
-9. 결말이 행정적 분류로 끝날 위험
-10. 한국 웹소설 무료분·화 절단·소구간 보상 미설계
-11. 기존 46~52장 구조와 웹소설 화 단위 혼용
-
-## 8. 수정 기준
-
-- 서유휘 시점 약 64~70%
-- 선택 시점 최대 4명
-- 완전 조연 변화축 3명, 부분 변화축 2명
-- 각 막에 무협·호송·구조의 장기 행동축
-- 모든 구간의 과오 고백·정통성 승인 반복 금지
-- 신병 한 개는 현물 없이 기능
-- 신병 교차 한 개는 결론 유보
-- 반복 현장 적대자 1명과 직접 충돌 최소 4회
-- 서유휘의 시작 욕망과 최종 포기 비용 고정
-- 결말 제도는 물리적 위기의 결과로 발생
-- 1~5화 안에 주인공·직업·위기·장기 목표 각인
-- 10~15화 안에 첫 소구간 결산
-- 회차마다 목표·압력·선택·다음 질문 중 최소 3개
-- 막마다 통쾌한 승리와 서유휘 책임에서 비롯된 손실을 각각 최소 1개
-
-## 9. 설정 정본의 역할
-
-설정 정본은 다음을 제공한다.
-
-- 역사·권역·강호·국가·상업의 작동 원리
-- 무공·병장기·의술·기환의 상한
-- 세력·조직의 자원과 충돌
-- 기록·명성·가격·권리·보관 규칙
-- 팔대신병과 쇄조도 원사건의 핵심
-
-다음은 실제 플롯·무료분·Outline에서 필요할 때만 국소 상세화한다.
-
-- 개별 문파의 세부 무공
-- 개별 장소·객잔·시장·음식·의복
-- 영초·영수·부적·보패 사례
-- 가격·거리·관직·방언의 구체값
-- B/C 세력의 고유명과 인물
-
-## 10. 다음 작업 순서
-
-1. B안·주손실 Human Edit
-2. 서유휘 이름 전체 동기화
-3. R-1 디자인 4안
-4. 서유휘 음성·행동 리듬 4안
-5. 핵심 동료 케미 4안
-6. 무료분 1~5화 훅 디자인 4안
-7. 무료분 1~25화 소구간 설계
-8. 전체 화수·막별 화수 후보 4안
-9. FUN GATE 재감사
-10. Plot Master v3
+1. 작품 감각 Human Edit
+2. 결말 4안과 승인
+3. 1+2 공동 주인공 4안과 승인
+4. 맥거핀·비밀 구조 4안과 승인
+5. 세 주인공 Want/Need/Lie/Wound
+6. 세 운명축 교차표
+7. 전체 화수·액트·서브액트 4안
+8. 무료분 진입점 4안
+9. Plot Master
+10. 무료분 1~25화
 11. 웹소설 화 단위 Outline
-12. 시간·이동·부상·권리·단서·절단 장부
-13. 독립 교차감사와 Outline Human Edit
-14. 전체 설계 최종 감사와 집필 준비 판정
+12. 용어·전투·설명·회차 절단 통합
+13. 연속성·FUN·작법 독립 감사
+14. 사용자 집필 준비 승인
+15. 그 뒤 원고
 
-## 11. 원고 잠금
+## 9. 원고 잠금
 
-다음까지 원고는 잠근다.
+다음까지 원고는 작성하지 않는다.
 
-- 플롯 Human Edit
-- FUN GATE 통과
-- 웹소설 화 단위 Outline 통과
-- 최종 연속성·연독 감사
-- 사용자 원고 진행 승인
+- 작품 감각 승인
+- 결말 승인
+- 공동 주인공 승인
+- 맥거핀 승인
+- 액트·서브액트·화수 승인
+- 무료분·Outline Gate 통과
+- 최종 감사
+- 사용자 집필 승인
