@@ -1,149 +1,164 @@
 # 《팔대신병록》 PM 진행 대시보드
 
-상태: `protagonist-starting-identity-reopened / exploration-active`
+상태: `integrated-design-draft-complete / conditional-pass / human-edit-pending`
 총괄: PM 오케스트레이터
-상위 정책: [`../book_writing.md`](../book_writing.md)
-실행 규칙: [`../CLAUDE.md`](../CLAUDE.md)
-메타 프롬프팅: [`META-PROMPTING-PROTOCOL-v1.md`](META-PROMPTING-PROTOCOL-v1.md)
-작법 에이전트: [`NARRATIVE-CRAFT-AGENT-ORCHESTRATION-v1.md`](NARRATIVE-CRAFT-AGENT-ORCHESTRATION-v1.md)
-직업 재설정: [`PROTAGONIST-OCCUPATION-RESET-v1.md`](PROTAGONIST-OCCUPATION-RESET-v1.md)
-출발 신분 4안: [`../design/SEO-YUHWI-STARTING-IDENTITY-FOUR-OPTIONS-v1.md`](../design/SEO-YUHWI-STARTING-IDENTITY-FOUR-OPTIONS-v1.md)
-완성 구성표: [`DESIGN-PACKAGE-COMPLETION-MATRIX-v2.md`](DESIGN-PACKAGE-COMPLETION-MATRIX-v2.md)
+원고: `locked`
 
-## 1. 우리가 만드는 것
+핵심 문서:
+
+- 통합 핵심 서사: [`../design/INTEGRATED-STORY-DESIGN-v1-PART1-CORE.md`](../design/INTEGRATED-STORY-DESIGN-v1-PART1-CORE.md)
+- 액트·서브액트·화수: [`../design/INTEGRATED-STORY-DESIGN-v1-PART2-STRUCTURE.md`](../design/INTEGRATED-STORY-DESIGN-v1-PART2-STRUCTURE.md)
+- 무료분 1~25화: [`../design/FREE-EPISODES-1-25-DESIGN-v1.md`](../design/FREE-EPISODES-1-25-DESIGN-v1.md)
+- 26~300화 Outline: `../design/EPISODE-FUNCTION-OUTLINE-*.md`
+- 집필·무협 문체: [`../design/WEBNOVEL-WRITING-AND-MARTIAL-PROSE-GUIDE-v1.md`](../design/WEBNOVEL-WRITING-AND-MARTIAL-PROSE-GUIDE-v1.md)
+- 연속성 장부: [`../audit/INTEGRATED-CONTINUITY-LEDGER-v1.md`](../audit/INTEGRATED-CONTINUITY-LEDGER-v1.md)
+- 교차감사: [`../audit/INTEGRATED-STORY-DESIGN-CROSS-AUDIT-v1.md`](../audit/INTEGRATED-STORY-DESIGN-CROSS-AUDIT-v1.md)
+- 주인공 오버라이드: [`PROTAGONIST-FRAMEWORK-OVERRIDE-v2.md`](PROTAGONIST-FRAMEWORK-OVERRIDE-v2.md)
+
+---
+
+## 1. 작품 목표
 
 **한국 플랫폼용 대하 무협 웹소설 《팔대신병록》의 완성형 작품 설계 패키지.**
 
-현재 최우선 기준:
+통합 권고 한 문장:
 
-> 설정이나 직업의 편리함보다, 독자가 서유휘라는 사람 때문에 계속 읽고 싶어야 한다.
+> 몰락한 병기 수리 가문의 무인 서유휘가 사람을 살리기 위해 명문의 보검을 부러뜨리고, 검 안에서 나온 백팔십칠 년 전의 봉서심통 때문에 가문·문파·국가·해상 공동체의 책임 전쟁에 휘말린다.
 
-## 2. 현재 상태
+---
+
+## 2. 최신 사용자 결정
+
+확정:
+
+- 주인공 이름: 서유휘
+- 표사·검표수·인계표사는 주인공 핵심 직업이 아님
+- 표국·조선소를 작품 전체의 얼굴로 사용하지 않음
+- 재미를 우선하며 모티브 인물·작품을 직접 복제하지 않음
+- 설계 패키지를 먼저 끝까지 만든 뒤 통합 검토
+
+후보:
+
+- 몰락한 병기 수리 가문의 유랑 무인
+- 유청하·나해란 독립 영웅축
+- 봉서심통 전면 맥거핀
+- 원본 파괴·생존자 구출 결말
+- 300화, 6액트·18서브액트
+
+---
+
+## 3. 현재 상태
 
 | 영역 | 상태 | 판정 |
 |---|---|---|
-| 세계·무공·기환·팔대신병 핵심 | `canon` | 유지 |
+| 세계·무공·기환·팔대신병 | `canon` | 유지 |
 | 주인공 이름 서유휘 | `user-selected` | 유지 |
-| 서유휘 표사 정체 | `rejected-as-core` | 과거 참고안으로만 보존 |
-| 서유휘 출발 신분 | `four-options / exploration-only` | 1~5화 시험 필요 |
-| 서유휘 영웅 엔진 | `reopened` | 곽정·영호충·교봉 모티브만 참고 |
-| 표국 중심 대서사 | `suspended` | 정본 아님 |
-| 조선소 시작 | `candidate-only` | 직업과 분리해 재검토 |
-| 장기 분산 호송 | `deferred-reference` | 전체 대서사 효력 없음 |
-| 진아령 | `deferred-reference` | 필요 시 재활용 |
-| 단일·복수 주인공 구조 | `unapproved-candidates` | 재미 검증 뒤 선택 |
-| 결말 | `reopened` | 주인공·작품 감각 뒤 4안 |
-| 맥거핀·미스터리 | `not-designed` | 신규 Gate |
-| 액트·서브액트·총화수 | `locked-pending-foundation` | 결말·핵심 인물 뒤 설계 |
-| 무료분·화 단위 Outline | `on-hold` | 진입점 재설계 필요 |
+| 표사 정체 | `rejected-as-core` | 참고안만 보존 |
+| 새 주인공 출발 | `recommended-integrated-draft` | 병기 수리 가문 후보 |
+| 작품 한 문장 약속 | `draft-complete` | Human Edit 필요 |
+| 결말 4안·역산 | `draft-complete` | E-B PM 권고 |
+| 맥거핀·미스터리 | `draft-complete` | 봉서심통+명부+해명궁 신호 |
+| 인물·관계 | `integrated-framework` | 관계 얼굴 보강 필요 |
+| 적대 압력 | `integrated-framework` | 사문경 과강화 보정 필요 |
+| 액트·서브액트 | `draft-complete` | 6액트·18서브액트 |
+| 총화수 | `working-range` | 300화, 280~320 허용 |
+| 무료분 1~25화 | `function-outline-complete` | 조건부 FUN pass |
+| 26~300화 | `function-outline-complete` | 화별 목표·선택·절단 작성 |
+| 집필법·무협 용어 | `draft-complete` | 새 감각 반영 |
+| 연속성 장부 | `draft-complete` | 실제 장소 고증 필요 |
+| 독립 교차감사 | `conditional-pass` | P0 0, P1 9 |
 | 원고 | `locked` | 미착수 |
 
-## 3. 서유휘 출발 신분 4안
+---
 
-| 안 | 출발점 | 가장 강한 재미 | 가장 큰 위험 |
-|---|---|---|---|
-| S-A | 파문 직전의 문파 제자 | 사문·동료·규율과 즉시 충돌 | 영호충 아류 위험 |
-| S-B | 몰락한 병기장 가문의 후계 | 팔대신병·가문 누명과 자연 연결 | 선택받은 혈통화 위험 |
-| S-C | 변방 군진에서 돌아온 무인 | 국가·정체·의리의 대하 스케일 | 초반 과중·성장감 약화 |
-| S-D | 사문 없는 유랑 검객 | 자유·관계·호쾌한 강호행 | 목표와 고유성 약화 |
+## 4. 통합 권고 구조
 
-현재 가장 시험 가치가 높은 안:
+### 서유휘
 
-> **S-A + S-B 결합 후보** — 몰락한 병기장 가문 출신으로 문파에서 자랐으나, 적대 문파 사람을 살리고 병기 속 거짓 흔적을 공개하려다 파문 위기에 놓인 서유휘.
+- 몰락한 병기 수리 가문의 후계
+- 병기의 균열·응력·잘못된 수리를 읽는 무인
+- 사람을 살리기 위해 규칙과 물건을 바꾸고 그 비용을 혼자 감당하는 결함
+- 가문 복권을 원하지만 결말에서 원본을 파괴해 완전 복권을 포기
 
-아직 PM 권고 정본이 아니다. 네 안 모두 1~5화 축약 시뮬레이션으로 비교한다.
+### 독립 영웅축
 
-## 4. 재미 검증 항목
+- 유청하: 공개 절차·사승 명예·정통 검법
+- 나해란: 해상 신호·통역·가족 선단·국가와 공동체
 
-각 출발점마다 다음을 만든다.
+서유휘가 명확한 주인공이며 두 인물은 자동 공동 주인공으로 확정하지 않는다.
 
-1. 1화 첫 행동
-2. 서유휘를 좋아하거나 궁금해할 이유
-3. 첫 인간관계 갈등
-4. 3화의 첫 손실
-5. 5화의 장기 질문
-6. 20화까지의 첫 보상
-7. 장편 비극의 씨앗
-8. 팔대신병과의 비수집형 연결
+### 전면 맥거핀
 
-다음 항목이 약하면 탈락한다.
+- D8 봉서검의 잃어버린 봉인 철물 `봉서심통`
+- 문서 전문이 아니라 세 상충 명령의 개봉·지연·재봉인 순서를 보존
+- 결말에서 쇄조도 봉쇄문을 열기 위해 파괴
 
-- 직업 설명 없이도 주인공이 기억되는가
-- 주인공이 사건을 만들고 책임지는가
-- 첫 관계가 장기 감정축이 되는가
-- 무공·문파·가족·국가로 확대 가능한가
-- 유명 무협 주인공 이름을 바꾼 복제품이 아닌가
+### 결말
 
-## 5. 작법·에이전트 체계
+- 원본을 보존하면 가문·명령 순서 완전 증명
+- 원본을 비틀면 갇힌 사람들을 구출
+- 서유휘는 사람을 선택
+- 단일 원본 대신 국가·문파·장인·해상·피해 공동체의 분산 합증 성립
 
-전문 역할:
+---
 
-1. 주인공 매력 설계자
-2. 결말 설계자 — 결말 우선·역산
-3. 맥거핀·미스터리 설계자
-4. 운명 직조 설계자
-5. 인물 비극·관계 설계자
-6. 무협 액션 설계자
-7. 한국 웹연재 설계자
-8. 세계·용어 통합 설계자
-9. 연속성 감사자
-10. 반대감사자
-11. PM 통합
+## 5. 전체 구조
 
-핵심 작법:
+권고 작업값:
 
-- Ending First
-- MacGuffin
-- Want / Need / Lie / Wound
-- Promise / Progress / Payoff
-- Try / Fail Cycles
-- Battle as Argument
-- Setup / Payoff Ledger
-- 회차 절단 설계
+- 300화
+- 실제 Outline 허용 범위 280~320화
+- 6액트·18서브액트
 
-다중 주인공 작법은 주인공 구조가 선택된 경우에만 활성화한다.
+| 액트 | 화수 | 기능 |
+|---|---:|---|
+| 1 부러진 검 | 1~45 | 파검·심통·가문 작업장 상실 |
+| 2 세 갈래 길 | 46~95 | 장인·해상축·세 영웅 첫 공조 |
+| 3 거짓 동맹 | 96~150 | 재심·가문 반전·상충 명령 |
+| 4 피와 국경 | 151~205 | 후손·국가·세 영웅 결별 |
+| 5 여덟 책임 | 206~255 | 분산 합증·독립 승리·재회 |
+| 6 마지막 봉인 | 256~300 | 쇄조도 구조·원본 파괴·결산 |
 
-## 6. 유지·폐기·보류
+---
 
-유지:
+## 6. 감사 결과
 
-- 전통 무협 + 역사 미스터리 + 저강도 기환
-- 서유휘 이름
-- 팔대신병의 책임·계승·잔흔
-- 기존 세계·무공·지역 핵심
-- 규칙과 사람의 실제 피해가 충돌한다는 인물 질문
+구조적 P0:
 
-폐기·보류:
+- 없음
 
-- 표사를 서유휘의 정체로 사용
-- 표국을 작품 전체의 얼굴로 사용
-- 조선소 붕괴를 자동 첫 사건으로 사용
-- 장기 호송을 자동 대서사로 사용
-- 곽정형·영호충형·교봉형을 그대로 배분하거나 복제
-- 복수 주인공 구조를 미리 확정
+P1 핵심:
 
-## 7. 새 본선 순서
+1. 병기 수리 능력 만능화 방지
+2. 봉서심통과 봉쇄문 규격의 기계적 설치 강화
+3. 151~225화 권리 논쟁의 행동화
+4. 유청하·나해란 개인 관계망 보강
+5. 사문경 과강화 보정
+6. 50화 단위 압축 감사
+7. 생활 유머·애착 보상 장부
+8. 실제 장소·이동·계절·군문 고증
+9. 통합 권고안 사용자 Human Edit
 
-1. 출발 신분 네 안의 1~5화 축약 시뮬레이션
-2. 서유휘의 욕망·결함·관계·영웅 엔진 비교
-3. 작품 감각과 주인공 구조 선택
-4. 결말 4안
-5. 핵심 인물 후보
-6. 맥거핀·비밀 구조 4안
-7. 관계·운명·세력 인과
-8. 전체 화수·액트·서브액트 4안
-9. 무료분 정밀 설계
-10. Plot Master
-11. 화 단위 Outline
-12. FUN·작법·연속성 독립 감사
-13. 집필 준비 판정
+FUN Gate:
 
-## 8. 현재 필요한 작업
+- 설계 차원 `conditional-pass`
+- 최종 통과 아님
 
-사용자에게 지금 당장 직업 선택을 요구하지 않는다.
+---
 
-다음 산출물:
+## 7. 남은 본선
 
-> 네 출발 신분 각각의 1~5화 축약 재미 시뮬레이션과 독립 비교 감사.
+새 이야기를 다시 만드는 단계는 끝났다.
 
-그 결과를 한눈에 비교한 뒤 서유휘의 출발점을 Human Edit한다.
+남은 것은:
+
+1. 통합 Human Edit
+2. 인물 바이블 v3 — 가족·스승·장애 동문·선단 인물 최소 고유명
+3. 봉서심통–봉쇄문 기계 구조 감사
+4. 장소·이동·계절·역사기관 국소 감사
+5. 50화 단위 반복·압축 감사
+6. 관계·유머·휴식 보상 장부
+7. 최종 FUN·연속성 감사
+8. 사용자 집필 준비 승인
+
+그 뒤에만 원고를 연다.
