@@ -1,6 +1,6 @@
 # 《팔대신병록》 PM 진행 대시보드
 
-상태: `epic-fate-braided-tonal-reset / human-edit-pending`
+상태: `epic-fate-braided-tonal-reset / hero-archetype-human-edit-pending`
 총괄: PM 오케스트레이터
 상위 정책: [`../book_writing.md`](../book_writing.md)
 실행 규칙: [`../CLAUDE.md`](../CLAUDE.md)
@@ -8,6 +8,7 @@
 작법 에이전트: [`NARRATIVE-CRAFT-AGENT-ORCHESTRATION-v1.md`](NARRATIVE-CRAFT-AGENT-ORCHESTRATION-v1.md)
 작품 감각 재설정: [`TONAL-DIRECTION-RESET-DECISION-v1.md`](TONAL-DIRECTION-RESET-DECISION-v1.md)
 대하 무협 4안: [`../design/TIANLONG-BABU-TONAL-VISION-FOUR-OPTIONS-v1.md`](../design/TIANLONG-BABU-TONAL-VISION-FOUR-OPTIONS-v1.md)
+영웅 유형 4안: [`../design/HERO-ARCHETYPE-FOUR-OPTIONS-v1.md`](../design/HERO-ARCHETYPE-FOUR-OPTIONS-v1.md)
 영향 감사: [`../audit/TONAL-RESET-IMPACT-AUDIT-v1.md`](../audit/TONAL-RESET-IMPACT-AUDIT-v1.md)
 완성 구성표: [`DESIGN-PACKAGE-COMPLETION-MATRIX-v2.md`](DESIGN-PACKAGE-COMPLETION-MATRIX-v2.md)
 
@@ -34,8 +35,9 @@
 | B 장기 분산 호송 | `deferred-candidate` | 전체 대서사 효력 정지 |
 | 진아령 | `reusable-rival-candidate` | 서유휘 축에서 재검토 |
 | 대하 무협 감각 | `four-options / human-edit-pending` | T-B PM 권고 |
+| 영웅 유형 | `four-options / human-edit-pending` | E-B PM 권고 |
 | 결말 | `reopened` | 4안 필요 |
-| 공동 주인공 | `not-designed` | 1+2 후보 필요 |
+| 공동 주인공 | `archetype-only / not-designed` | B·C 인물 4안 필요 |
 | 맥거핀·미스터리 | `not-designed` | 신규 Gate |
 | 액트·서브액트·총화수 | `locked-pending-foundation` | 결말·주인공 뒤 설계 |
 | 무료분·화 단위 Outline | `on-hold` | 진입점 재설계 필요 |
@@ -57,7 +59,26 @@ T-B 권고 이유:
 - 표국을 작품 전체 장르가 아닌 서유휘의 삶과 능력으로 사용 가능
 - 팔대신병을 여러 삶에 분산해 수집 퀘스트를 피함
 
-## 4. 작법·에이전트 체계
+## 4. 영웅 유형 디자인
+
+| 역할 | PM 권고 영웅 엔진 | 담당 재미 |
+|---|---|---|
+| 서유휘 | **책임지는 반골형** | 영호충형 즉시 매력 + 곽정형 신뢰 + 후반 비극의 씨앗 |
+| 공동 주인공 B | **비극적 대영웅형** | 정체·민족·국가·의리의 충돌 |
+| 공동 주인공 C | **성장하는 대협형** | 사승·무공·강호 성장과 장기 보상 |
+
+서유휘 핵심 문장:
+
+> 규칙을 싫어하는 사람이 아니라, 규칙 뒤에 숨는 사람을 싫어한다.
+
+이 배분의 목적:
+
+- 한 인물에게 유명 영웅의 장점을 모두 억지로 넣지 않는다.
+- 세 인물이 같은 방식으로 옳지 않게 한다.
+- 만남과 공조 자체가 가치관 충돌이 되게 한다.
+- 한국 웹소설의 즉시 매력과 고전 대하 무협의 비극을 함께 확보한다.
+
+## 5. 작법·에이전트 체계
 
 전문 역할:
 
@@ -85,7 +106,7 @@ T-B 권고 이유:
 - Setup/Payoff Ledger
 - 회차 절단 설계
 
-## 5. 현재 유지·재검토
+## 6. 현재 유지·재검토
 
 유지:
 
@@ -97,39 +118,45 @@ T-B 권고 이유:
 
 재검토:
 
-- 서유휘가 유일 주인공인지
+- 서유휘의 영웅 엔진 최종 선택
+- 공동 주인공 두 명의 성별·출신·욕망·결말
 - 표국의 비중
 - 조선소 시작
 - 진아령의 위상
 - 분점 보증 결말
 - 장기 호송 대서사
 
-## 6. 새 본선 순서
+## 7. 새 본선 순서
 
-1. 작품 감각 선택
+1. 작품 감각·영웅 유형 선택
 2. 결말 4안
-3. 1+2 공동 주인공 4안
-4. 맥거핀·비밀 구조 4안
-5. 세 인물의 비극·관계·교차 인과
-6. 전체 화수·액트·서브액트 4안
-7. 무료분 진입점 4안
-8. Plot Master
-9. 무료분 1~25화
-10. 화 단위 Outline
-11. 연속성·FUN·작법 독립 감사
-12. 집필 준비 판정
+3. 공동 주인공 B 4안
+4. 공동 주인공 C 4안
+5. 맥거핀·비밀 구조 4안
+6. 세 인물의 비극·관계·교차 인과
+7. 전체 화수·액트·서브액트 4안
+8. 무료분 진입점 4안
+9. Plot Master
+10. 무료분 1~25화
+11. 화 단위 Outline
+12. 연속성·FUN·작법 독립 감사
+13. 집필 준비 판정
 
-## 7. 사용자 결정 대기
+## 8. 사용자 결정 대기
 
-현재 필요한 선택:
+현재 PM 통합 권고:
 
-- `T-B 1+2 삼인 운명교차형` 승인 여부
+> **T-B 1+2 삼인 운명교차형 + E-B 매력 앵커형**
+
+- 서유휘: 책임지는 반골형
+- 공동 주인공 B: 비극적 대영웅형
+- 공동 주인공 C: 성장하는 대협형
 
 응답 예:
 
-- `T-B로 진행`
-- `T-B지만 서유휘 비중 70%`
-- `T-C에 가깝게`
-- `표국은 유지하되 조선소 시작은 빼기`
+- `통합 영웅안 승인`
+- `서유휘는 영호충형을 더 강하게`
+- `서유휘를 곽정형으로`
+- `세 명을 동등 주인공으로`
 
 선택 전에는 결말·공동 주인공·화수·무료분을 정본화하지 않는다.
