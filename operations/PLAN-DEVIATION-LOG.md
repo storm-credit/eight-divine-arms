@@ -151,6 +151,22 @@
 
 ---
 
+## DEV-20260727-10 — 개별 선택 Gate가 전체 설계 흐름을 반복 중단
+
+| 항목 | 내용 |
+|---|---|
+| 발생 위치 | 작품 감각·영웅 유형·직업·무료분 후보 진행 |
+| 원래 계획 | 완성형 설계 패키지를 만든 뒤 사용자와 전체 구조를 검토 |
+| 실제 변화 | 각 후보를 만든 직후 사용자 승인을 요구하며 결말·맥거핀·액트·화수·Outline으로 이어지는 전체 설계를 반복 중단함 |
+| 원인 | 승인 누락 재발을 피하려다 `정본 승인`과 `후보 설계 진행`을 과도하게 동일시함 |
+| 영향 | 사용자는 설계서 전체상을 보지 못한 채 부분 선택을 계속 요구받았고, 프로젝트가 실제보다 덜 진행된 상태로 보임 |
+| 임시 조치 | 미확정 사항을 `recommended-integrated-draft`로 유지하면서 결말·맥거핀·6액트·300화 Outline·집필법·연속성·감사까지 전체 초안을 먼저 완성 |
+| 영구 조치 | 후보 설계는 전체 패키지 끝까지 진행 가능하되, 정본 승격·원고 개방만 Human Edit에서 차단. 사용자에게는 개별 선택보다 통합 검토 패킷을 우선 제시 |
+| 상태 | resolved for workflow / integrated Human Edit pending |
+| 관련 파일 | `design/INTEGRATED-STORY-DESIGN-v1-PART1-CORE.md`, `design/INTEGRATED-STORY-DESIGN-v1-PART2-STRUCTURE.md`, `design/EPISODE-FUNCTION-OUTLINE-*.md`, `audit/INTEGRATED-STORY-DESIGN-CROSS-AUDIT-v1.md` |
+
+---
+
 # 새 항목 템플릿
 
 ## DEV-YYYYMMDD-NN — 제목
