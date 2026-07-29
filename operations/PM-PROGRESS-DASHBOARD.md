@@ -1,6 +1,6 @@
 # 《팔대신병록》 PM 진행 대시보드
 
-상태: `design-document-complete-candidate / longform-ledgers-complete / user-veto-pending / manuscript-locked`
+상태: `design-document-complete-candidate / 960ep-outline-synchronized / user-veto-pending / manuscript-locked`
 업데이트: `2026-07-30`
 
 ## 1. 사용자 확정
@@ -38,40 +38,43 @@
 | 산길 사용자 | 석헌 | 유지 후보 |
 | 정파 회수 책임자 | 한백지 | PM 교체 후보 |
 
-`윤겸`은 폐기 작업명이다. 서유휘 외 모든 이름은 사용자 미확정이다.
+`윤겸`은 폐기 작업명이다. `진소무·곽소무` 표기는 곽무소 한 역할로 병합한다. 서유휘 외 모든 이름은 사용자 미확정이다.
 
 ## 4. 8부 중심 착지
 
-| 부 | 권고 화수 | 전면 |
-|---|---:|---|
-| 1 | 110 | 비무 명단·거짓 소속·참가자 통제 |
-| 2 | 115 | 장강 세 배·첫 완전 신병 실물 |
-| 3 | 120 | 야간 정보전·떠날 권리 |
-| 4 | 120 | 공식 결투·두 사용자 생존 |
-| 5 | 125 | 소겸의 산문·검진·제자 선택 |
-| 6 | 125 | 세 지역·재련 실패·사용권 분산 |
-| 7 | 125 | 연소담과 구조 방식 실전 경쟁 |
-| 8 | 120 | 한 점 절초와 여러 퇴로 |
-| **합계** | **960** | 실제 착지 900~1050 허용 |
+| 부 | 권고 화수 | 제작 범위 | 전면 |
+|---|---:|---:|---|
+| 1 | 110 | 1~110 | 비무 명단·거짓 소속·참가자 통제 |
+| 2 | 115 | 111~225 | 장강 세 배·첫 완전 신병 실물 |
+| 3 | 120 | 226~345 | 야간 정보전·떠날 권리 |
+| 4 | 120 | 346~465 | 공식 결투·두 사용자 생존 |
+| 5 | 125 | 466~590 | 소겸의 산문·검진·제자 선택 |
+| 6 | 125 | 591~715 | 세 지역·재련 실패·사용권 분산 |
+| 7 | 125 | 716~840 | 연소담과 구조 방식 실전 경쟁 |
+| 8 | 120 | 841~960 | 한 점 절초와 여러 퇴로 |
+| **합계** | **960** | **1~960** | 실제 착지 900~1050 허용 |
 
 회당 4,500~5,500자 기준 총 4,320,000~5,280,000자.
 
-## 5. 이번에 완료한 장기 운용 장부
+기존 1~1000화 기능표는 사건 설계 원본으로 유지하고, `outline/960EP-FUNCTION-MAP-SYNCHRONIZATION-OVERLAY-v1.md`로 제작 범위·인명·압축 Gate를 적용한다.
+
+## 5. 장기 운용 장부
 
 - `design/CHARACTER-RELATIONSHIP-LONGFORM-LEDGER-v1.md`
-  - 핵심 12인 욕망·오belief·비가역 변화·최종 대가.
+  - 핵심 12인 욕망·오신·비가역 변화·최종 대가.
   - 서유휘–소겸 8부 관계선.
   - 서유휘–연소담 사승 결산.
-  - 로맨스 없이도 성립하는 구조 잠금.
 - `design/DIVINE-ARMS-USER-COST-DISPOSITION-LEDGER-v1.md`
   - 신병 8개의 사용자·공동체·작동·대가·장기 배치·최종 처리.
-  - 제6부 재련 실패 결과와 사부 강제 연결 한계.
 - `outline/FORESHADOWING-REVEAL-PAYOFF-MASTER-v1.md`
   - 핵심 미스터리 10개 설치·재해석·회수.
-  - 부별 정보 지급량과 복선 과밀 방지 Gate.
 - `design/ARC-ANTAGONIST-VICTORY-COST-MATRIX-v1.md`
   - 8부별 표면 적대·실제 구조·가짜 승리·진짜 승리·비가역 비용.
-  - 매 부 서로 다른 포기 대상.
+- `outline/960EP-FUNCTION-MAP-SYNCHRONIZATION-OVERLAY-v1.md`
+  - 기존 기능표를 960화 중심 제작 구조로 동기화.
+  - 구버전 인명과 부별 압축·보존 항목 지정.
+- `audit/LEGACY-NAME-AND-OUTLINE-SYNCHRONIZATION-AUDIT-v1.md`
+  - 이름 흔들림·1000→960화 위험·관계·신병·복선 반영 감사.
 
 ## 6. 팔대신병 상태
 
@@ -92,12 +95,13 @@
 
 ### 설계서 완료 후보
 
-- 약 960화 중심 8부 구조와 10화 기능표.
+- 약 960화 중심 8부 구조와 기존 기능표의 제작 동기화 오버레이.
 - 캐릭터·세계·지역·신병·플롯·연속성 통합 패키지.
 - 인물·관계 장부.
 - 신병 사용자·대가·최종 처리 장부.
 - 복선·정보 공개·회수 장부.
 - 적대 구조·승리 조건·비가역 비용 장부.
+- 구버전 인명·기능표 동기화 감사.
 - 이동·계절·부상·총분량 장부.
 - FUN·복제 방지·고증 감사.
 - 사용자 결정 패킷과 정본 병합 시뮬레이션.
@@ -125,17 +129,19 @@
 1. `book_writing.md`
 2. 이 대시보드
 3. `operations/PM-PRECANON-INTEGRATION-PACKAGE-v1.md`
-4. `design/CHARACTER-RELATIONSHIP-LONGFORM-LEDGER-v1.md`
-5. `design/DIVINE-ARMS-USER-COST-DISPOSITION-LEDGER-v1.md`
-6. `outline/FORESHADOWING-REVEAL-PAYOFF-MASTER-v1.md`
-7. `design/ARC-ANTAGONIST-VICTORY-COST-MATRIX-v1.md`
-8. `audit/FINAL-PRECANON-FUN-ORIGINALITY-HISTORICITY-AUDIT-v1.md`
-9. `operations/USER-HUMAN-EDIT-DECISION-PACKET-v1.md`
-10. `operations/CANON-MERGE-SIMULATION-MAP-v1.md`
-11. 각 부 10화 기능표와 PM 오버레이.
+4. `outline/960EP-FUNCTION-MAP-SYNCHRONIZATION-OVERLAY-v1.md`
+5. `audit/LEGACY-NAME-AND-OUTLINE-SYNCHRONIZATION-AUDIT-v1.md`
+6. `design/CHARACTER-RELATIONSHIP-LONGFORM-LEDGER-v1.md`
+7. `design/DIVINE-ARMS-USER-COST-DISPOSITION-LEDGER-v1.md`
+8. `outline/FORESHADOWING-REVEAL-PAYOFF-MASTER-v1.md`
+9. `design/ARC-ANTAGONIST-VICTORY-COST-MATRIX-v1.md`
+10. `audit/FINAL-PRECANON-FUN-ORIGINALITY-HISTORICITY-AUDIT-v1.md`
+11. `operations/USER-HUMAN-EDIT-DECISION-PACKET-v1.md`
+12. `operations/CANON-MERGE-SIMULATION-MAP-v1.md`
+13. 각 부 기존 10화 기능표와 PM 오버레이.
 
 `design/MASTER-DESIGN-ROADMAP.md`는 초기 기록용 archive-reference이며 진행 판단에 사용하지 않는다.
 
 현재 정확한 표현:
 
-> **설계서는 후보 기준으로 캐릭터·관계·세계·신병·8부 플롯·복선·적대 구조·연속성·분량·최종 감사까지 완결됐다. 사용자 확인 전 정본은 아니며 원고는 잠겨 있다.**
+> **설계서는 후보 기준으로 완결됐고, 기존 1~1000화 기능표도 960화 중심 제작 구조·최신 인명·관계·신병·복선 장부와 동기화됐다. 사용자 확인 전 정본은 아니며 원고는 잠겨 있다.**
