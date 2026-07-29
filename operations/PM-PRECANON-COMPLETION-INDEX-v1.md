@@ -1,6 +1,6 @@
 # 《팔대신병록》 PM 정본 병합 직전 완료 구성표 v1
 
-상태: `active-completion-index / design-document-complete-candidate / user-veto-pending / manuscript-locked`
+상태: `active-completion-index / design-document-complete-candidate / 960ep-outline-synchronized / user-veto-pending / manuscript-locked`
 업데이트: `2026-07-30`
 
 ## 1. 완료
@@ -11,6 +11,8 @@
 | PM 결정 | `operations/1000EP-PM-HUMAN-EDIT-DECISION-v1.md` | complete |
 | 통합 후보 | `design/INTEGRATED-STORY-BIBLE-v4-PM-EDITED-CANDIDATE.md` | complete-candidate |
 | 병합 직전 패키지 | `operations/PM-PRECANON-INTEGRATION-PACKAGE-v1.md` | complete |
+| 960화 기능표 동기화 | `outline/960EP-FUNCTION-MAP-SYNCHRONIZATION-OVERLAY-v1.md` | complete-candidate |
+| 구버전 인명·기능표 감사 | `audit/LEGACY-NAME-AND-OUTLINE-SYNCHRONIZATION-AUDIT-v1.md` | complete |
 | 장기 인물·관계 | `design/CHARACTER-RELATIONSHIP-LONGFORM-LEDGER-v1.md` | complete-candidate |
 | 신병 사용자·대가·처리 | `design/DIVINE-ARMS-USER-COST-DISPOSITION-LEDGER-v1.md` | complete-candidate |
 | 복선·공개·회수 | `outline/FORESHADOWING-REVEAL-PAYOFF-MASTER-v1.md` | complete-candidate |
@@ -35,6 +37,8 @@
 - 핵심 복선 10개의 설치·재해석·회수.
 - 이동·계절·부상·정보·소유권 연속성.
 - 회당 4,500~5,500자와 960화 중심 착지.
+- 기존 1~1000화 기능표를 960화 제작 구조로 읽는 오버레이.
+- 구버전 이름과 최신 PM 후보의 단일 치환 규칙.
 - FUN·반복·복제·고증·이름 충돌 감사.
 - 정본 병합 파일군과 롤백 절차.
 
@@ -74,6 +78,7 @@
 ## 6. 폐기·복원 금지
 
 - 윤겸.
+- 곽소무와 진소무를 별도 핵심 인물로 분리.
 - 표사·검표수·인계표사 중심안.
 - 병기 수리 가문 후계 중심안.
 - 쇄조도·봉서심통 중심안.
@@ -88,15 +93,17 @@
 2. `book_writing.md`.
 3. `operations/PM-PROGRESS-DASHBOARD.md`.
 4. `operations/PM-PRECANON-INTEGRATION-PACKAGE-v1.md`.
-5. `design/CHARACTER-RELATIONSHIP-LONGFORM-LEDGER-v1.md`.
-6. `design/DIVINE-ARMS-USER-COST-DISPOSITION-LEDGER-v1.md`.
-7. `outline/FORESHADOWING-REVEAL-PAYOFF-MASTER-v1.md`.
-8. `design/ARC-ANTAGONIST-VICTORY-COST-MATRIX-v1.md`.
-9. `audit/FINAL-PRECANON-FUN-ORIGINALITY-HISTORICITY-AUDIT-v1.md`.
-10. `operations/USER-HUMAN-EDIT-DECISION-PACKET-v1.md`.
-11. `operations/CANON-MERGE-SIMULATION-MAP-v1.md`.
-12. 각 부 10화 기능표와 PM 오버레이.
-13. 구버전 문서 중 위 문서와 충돌하지 않는 부분.
+5. `outline/960EP-FUNCTION-MAP-SYNCHRONIZATION-OVERLAY-v1.md`.
+6. `audit/LEGACY-NAME-AND-OUTLINE-SYNCHRONIZATION-AUDIT-v1.md`.
+7. `design/CHARACTER-RELATIONSHIP-LONGFORM-LEDGER-v1.md`.
+8. `design/DIVINE-ARMS-USER-COST-DISPOSITION-LEDGER-v1.md`.
+9. `outline/FORESHADOWING-REVEAL-PAYOFF-MASTER-v1.md`.
+10. `design/ARC-ANTAGONIST-VICTORY-COST-MATRIX-v1.md`.
+11. `audit/FINAL-PRECANON-FUN-ORIGINALITY-HISTORICITY-AUDIT-v1.md`.
+12. `operations/USER-HUMAN-EDIT-DECISION-PACKET-v1.md`.
+13. `operations/CANON-MERGE-SIMULATION-MAP-v1.md`.
+14. 각 부 기존 10화 기능표와 PM 오버레이.
+15. 구버전 문서 중 위 문서와 충돌하지 않는 부분.
 
 `design/MASTER-DESIGN-ROADMAP.md`는 archive-reference다.
 
@@ -109,4 +116,4 @@
 
 현재 정확한 표현:
 
-> **《팔대신병록》 설계서는 PM 후보 기준으로 완결됐다. 캐릭터·관계·세계·팔대신병·8부 플롯·복선·적대 구조·연속성·분량·최종 감사가 갖춰졌으며, 사용자 확인 전 정본은 아니고 원고는 잠겨 있다.**
+> **《팔대신병록》 설계서는 PM 후보 기준으로 완결됐으며, 기존 1~1000화 기능표도 960화 제작 구조·최신 인명·관계·신병·복선 장부와 동기화됐다. 사용자 확인 전 정본은 아니고 원고는 잠겨 있다.**
