@@ -1,6 +1,6 @@
 # 《팔대신병록》 PM 진행 대시보드
 
-상태: `precanon-package-complete / final-audit-complete / user-veto-pending / manuscript-locked`
+상태: `precanon-review-ready / merge-simulation-ready / user-veto-pending / manuscript-locked`
 업데이트: `2026-07-29`
 
 ## 1. 사용자 확정
@@ -98,6 +98,8 @@
 - 지역 최소화와 이동·계절·부상 장부.
 - 8부별 화수·총글자 재산출.
 - 최종 FUN·복제 방지·고증 감사.
+- 사용자 고위험 선택 7개를 압축한 Human Edit 결정 패킷.
+- 정본 파일군·치환표·병합 순서·롤백 규칙 시뮬레이션.
 - 구조적 P0: 0.
 
 ### 후보
@@ -106,6 +108,7 @@
 - 반보문·반보회.
 - 팔대신병 이중 명명.
 - 960화 중심 착지.
+- 로맨스 B안: 저강도 장기 긴장, 결말 확정 없음.
 
 ### 미정
 
@@ -120,14 +123,16 @@
 ## 8. 현행 최우선 문서
 
 1. `book_writing.md`
-2. `operations/PM-PRECANON-INTEGRATION-PACKAGE-v1.md`
-3. `audit/FINAL-PRECANON-FUN-ORIGINALITY-HISTORICITY-AUDIT-v1.md`
-4. `operations/PM-PRECANON-COMPLETION-INDEX-v1.md`
-5. `operations/1000EP-PM-HUMAN-EDIT-DECISION-v1.md`
-6. `design/INTEGRATED-STORY-BIBLE-v4-PM-EDITED-CANDIDATE.md`
-7. `outline/PM-HUMAN-EDIT-ARC1-7-8-OVERLAY-v1.md`
-8. 각 부 10화 기능표.
+2. `operations/USER-HUMAN-EDIT-DECISION-PACKET-v1.md`
+3. `operations/PM-PRECANON-INTEGRATION-PACKAGE-v1.md`
+4. `operations/CANON-MERGE-SIMULATION-MAP-v1.md`
+5. `audit/FINAL-PRECANON-FUN-ORIGINALITY-HISTORICITY-AUDIT-v1.md`
+6. `operations/PM-PRECANON-COMPLETION-INDEX-v1.md`
+7. `operations/1000EP-PM-HUMAN-EDIT-DECISION-v1.md`
+8. `design/INTEGRATED-STORY-BIBLE-v4-PM-EDITED-CANDIDATE.md`
+9. `outline/PM-HUMAN-EDIT-ARC1-7-8-OVERLAY-v1.md`
+10. 각 부 10화 기능표.
 
 현재 정확한 표현:
 
-> **PM 후보는 정본 병합 직전 패키지와 최종 감사를 완료했다. 사용자 확인 전에는 정본이 아니며 원고는 잠겨 있다.**
+> **PM 후보는 정본 병합 직전 패키지·최종 감사·사용자 결정 패킷·병합 시뮬레이션까지 완료했다. 사용자 확인 전에는 정본이 아니며 원고는 잠겨 있다.**
