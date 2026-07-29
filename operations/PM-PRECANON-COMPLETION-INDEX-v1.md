@@ -1,6 +1,6 @@
 # 《팔대신병록》 PM 정본 병합 직전 완료 구성표 v1
 
-상태: `active-completion-index / precanon-package-complete / user-veto-pending / manuscript-locked`
+상태: `active-completion-index / review-packet-ready / merge-simulation-ready / user-veto-pending / manuscript-locked`
 
 ## 1. 완료
 
@@ -10,6 +10,8 @@
 | PM 결정 | `operations/1000EP-PM-HUMAN-EDIT-DECISION-v1.md` | complete |
 | 통합 후보 | `design/INTEGRATED-STORY-BIBLE-v4-PM-EDITED-CANDIDATE.md` | complete-candidate |
 | 병합 직전 패키지 | `operations/PM-PRECANON-INTEGRATION-PACKAGE-v1.md` | complete |
+| 사용자 결정 패킷 | `operations/USER-HUMAN-EDIT-DECISION-PACKET-v1.md` | high-risk choices compressed |
+| 정본 병합 시뮬레이션 | `operations/CANON-MERGE-SIMULATION-MAP-v1.md` | file set, replacement map, rollback ready |
 | 제1·7·8부 오버레이 | `outline/PM-HUMAN-EDIT-ARC1-7-8-OVERLAY-v1.md` | complete |
 | 전체 FUN·연속성 감사 | `audit/FULL-1000EP-OUTLINE-FUN-CONTINUITY-AUDIT-v1.md` | complete-draft |
 | 최종 FUN·복제·고증 감사 | `audit/FINAL-PRECANON-FUN-ORIGINALITY-HISTORICITY-AUDIT-v1.md` | complete |
@@ -30,6 +32,7 @@
 - 팔대신병 기록명·생활명 8쌍.
 - 사건 지형 7개 코드.
 - 실집필 중심 착지 960화, 허용 900~1050화.
+- 로맨스 B안: 저강도 장기 긴장, 결말 확정 없음.
 
 ## 3. 사용자 확정
 
@@ -64,14 +67,23 @@
 
 1. 최신 사용자 결정.
 2. `book_writing.md`.
-3. `operations/PM-PRECANON-INTEGRATION-PACKAGE-v1.md`.
-4. `audit/FINAL-PRECANON-FUN-ORIGINALITY-HISTORICITY-AUDIT-v1.md`.
-5. `operations/1000EP-PM-HUMAN-EDIT-DECISION-v1.md`.
-6. `design/INTEGRATED-STORY-BIBLE-v4-PM-EDITED-CANDIDATE.md`.
-7. 제1·7·8부 PM 오버레이.
-8. 각 부 10화 기능표.
-9. 구버전 문서 중 위 문서와 충돌하지 않는 부분.
+3. `operations/USER-HUMAN-EDIT-DECISION-PACKET-v1.md`.
+4. `operations/PM-PRECANON-INTEGRATION-PACKAGE-v1.md`.
+5. `operations/CANON-MERGE-SIMULATION-MAP-v1.md`.
+6. `audit/FINAL-PRECANON-FUN-ORIGINALITY-HISTORICITY-AUDIT-v1.md`.
+7. `operations/1000EP-PM-HUMAN-EDIT-DECISION-v1.md`.
+8. `design/INTEGRATED-STORY-BIBLE-v4-PM-EDITED-CANDIDATE.md`.
+9. 제1·7·8부 PM 오버레이.
+10. 각 부 10화 기능표.
+11. 구버전 문서 중 위 문서와 충돌하지 않는 부분.
+
+## 7. 다음 상태 전환 조건
+
+- 후보 정본 승격: 사용자가 대상과 함께 `정본`, `확정`, `승인`을 명시해야 함.
+- 부분 승인: 승인된 슬롯만 user-canon, 나머지는 후보 유지.
+- 집필 개방: 정본 승인과 별도의 집필 준비 승인 필요.
+- `진행`·`이어서`: 상태 전환 없음.
 
 현재 정확한 표현:
 
-> **PM 후보는 캐릭터·세계·신병·플롯·연속성 패키지와 최종 감사까지 완료되어 정본 병합 직전 상태다. 그러나 사용자 확인 전 정본이 아니며 원고는 잠겨 있다.**
+> **PM 후보는 캐릭터·세계·신병·플롯·연속성 패키지, 최종 감사, 사용자 결정 패킷, 병합 시뮬레이션까지 완료되어 검토 대기 상태다. 그러나 사용자 확인 전 정본이 아니며 원고는 잠겨 있다.**
