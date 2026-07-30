@@ -1,6 +1,6 @@
 # 《팔대신병록》 PM 정본 병합 직전 완료 구성표 v1
 
-상태: `active-completion-index / design-document-complete-candidate / 960ep-outline-synchronized / user-veto-pending / manuscript-locked`
+상태: `active-completion-index / design-document-complete-candidate / integrated-qa-complete / pm-design-freeze-ready / user-veto-pending / manuscript-locked`
 업데이트: `2026-07-30`
 
 ## 1. 완료
@@ -13,6 +13,8 @@
 | 병합 직전 패키지 | `operations/PM-PRECANON-INTEGRATION-PACKAGE-v1.md` | complete |
 | 960화 기능표 동기화 | `outline/960EP-FUNCTION-MAP-SYNCHRONIZATION-OVERLAY-v1.md` | complete-candidate |
 | 구버전 인명·기능표 감사 | `audit/LEGACY-NAME-AND-OUTLINE-SYNCHRONIZATION-AUDIT-v1.md` | complete |
+| 960화 통합 설계 QA | `audit/960EP-INTEGRATED-DESIGN-QA-AUDIT-v1.md` | complete / P0 0 |
+| 설계서 동결 Gate | `operations/DESIGN-DOCUMENT-FREEZE-GATE-v1.md` | freeze-ready |
 | 장기 인물·관계 | `design/CHARACTER-RELATIONSHIP-LONGFORM-LEDGER-v1.md` | complete-candidate |
 | 신병 사용자·대가·처리 | `design/DIVINE-ARMS-USER-COST-DISPOSITION-LEDGER-v1.md` | complete-candidate |
 | 복선·공개·회수 | `outline/FORESHADOWING-REVEAL-PAYOFF-MASTER-v1.md` | complete-candidate |
@@ -40,13 +42,34 @@
 - 기존 1~1000화 기능표를 960화 제작 구조로 읽는 오버레이.
 - 구버전 이름과 최신 PM 후보의 단일 치환 규칙.
 - FUN·반복·복제·고증·이름 충돌 감사.
+- 960화 인과·관계·신병·복선·부상 통합 QA.
 - 정본 병합 파일군과 롤백 절차.
+- 설계서 동결 이후 허용·금지 변경 규칙.
 
-판정: `design-document-complete-candidate`.
+판정: `design-document-complete-candidate / integrated-qa-complete / pm-design-freeze-ready`.
 
-이는 **설계서가 미완성이라는 뜻이 아니라, 완성된 PM 설계 후보가 아직 사용자 정본 승격을 받지 않았다는 뜻**이다.
+이는 설계서가 미완성이라는 뜻이 아니라, **완성된 PM 설계 후보가 통합 QA까지 통과했으나 아직 사용자 정본 승격을 받지 않았다는 뜻**이다.
 
-## 3. 후보
+## 3. 동결 이후 자동 진행 범위
+
+허용:
+
+- D0: 오탈자·링크·상태 표기 수정.
+- D1: 이름 오버라이드·화수 좌표·설명 중복·문서 충돌 수정.
+- 중복·구버전 문서 archive-reference 강등.
+- 공개 이름·고증·표현 충돌 재감사.
+- 사용자 수정 지시 반영.
+
+금지:
+
+- 새 신병·최종 흑막·대규모 세력축 추가.
+- 제9부·외전·후속작 전제.
+- 혈통·친모 반전.
+- 회귀·빙의·상태창 우회 도입.
+- 정본 승인 전 원고·완성 장면 작성.
+- 1000화 맞춤용 사건 팽창.
+
+## 4. 후보
 
 - 라이벌: 소겸.
 - 사부: 연소담, 보조 별호 선보.
@@ -57,7 +80,7 @@
 - 실집필 중심 착지 960화, 허용 900~1050화.
 - 로맨스 B안: 저강도 장기 긴장, 결말 확정 없음.
 
-## 4. 사용자 확정
+## 5. 사용자 확정
 
 - 서유휘 이름·성별·단일 주인공.
 - 표사 아님.
@@ -67,7 +90,7 @@
 - 원고 잠금.
 - 최종 무공 전체 박탈 금지.
 
-## 5. 미정
+## 6. 미정
 
 - 후보 이름의 사용자 승인·거부·수정.
 - 로맨스 사용 여부와 강도.
@@ -75,7 +98,7 @@
 - 정본 승격 커밋.
 - 집필 준비 승인.
 
-## 6. 폐기·복원 금지
+## 7. 폐기·복원 금지
 
 - 윤겸.
 - 곽소무와 진소무를 별도 핵심 인물로 분리.
@@ -87,33 +110,30 @@
 - 서유휘의 문파·지부·왕국 건설.
 - 여성 주인공 힘 전체 박탈.
 
-## 7. 현재 우선순위
+## 8. 현재 우선순위
 
 1. 최신 사용자 결정.
 2. `book_writing.md`.
 3. `operations/PM-PROGRESS-DASHBOARD.md`.
-4. `operations/PM-PRECANON-INTEGRATION-PACKAGE-v1.md`.
-5. `outline/960EP-FUNCTION-MAP-SYNCHRONIZATION-OVERLAY-v1.md`.
-6. `audit/LEGACY-NAME-AND-OUTLINE-SYNCHRONIZATION-AUDIT-v1.md`.
-7. `design/CHARACTER-RELATIONSHIP-LONGFORM-LEDGER-v1.md`.
-8. `design/DIVINE-ARMS-USER-COST-DISPOSITION-LEDGER-v1.md`.
-9. `outline/FORESHADOWING-REVEAL-PAYOFF-MASTER-v1.md`.
-10. `design/ARC-ANTAGONIST-VICTORY-COST-MATRIX-v1.md`.
-11. `audit/FINAL-PRECANON-FUN-ORIGINALITY-HISTORICITY-AUDIT-v1.md`.
-12. `operations/USER-HUMAN-EDIT-DECISION-PACKET-v1.md`.
-13. `operations/CANON-MERGE-SIMULATION-MAP-v1.md`.
-14. 각 부 기존 10화 기능표와 PM 오버레이.
-15. 구버전 문서 중 위 문서와 충돌하지 않는 부분.
+4. `operations/DESIGN-DOCUMENT-FREEZE-GATE-v1.md`.
+5. `audit/960EP-INTEGRATED-DESIGN-QA-AUDIT-v1.md`.
+6. `operations/PM-PRECANON-INTEGRATION-PACKAGE-v1.md`.
+7. `outline/960EP-FUNCTION-MAP-SYNCHRONIZATION-OVERLAY-v1.md`.
+8. 장기 인물·신병·복선·적대 구조 장부.
+9. 최종 FUN·복제·고증 감사.
+10. 사용자 결정 패킷과 정본 병합 시뮬레이션.
+11. 각 부 기존 10화 기능표와 PM 오버레이.
+12. 구버전 문서 중 위 문서와 충돌하지 않는 부분.
 
 `design/MASTER-DESIGN-ROADMAP.md`는 archive-reference다.
 
-## 8. 상태 전환 조건
+## 9. 상태 전환 조건
 
 - 후보 정본 승격: 사용자가 대상과 함께 `정본`, `확정`, `승인`을 명시.
 - 부분 승인: 승인된 슬롯만 user-canon, 나머지는 후보 유지.
 - 집필 개방: 정본 승인과 별도의 집필 준비 승인 필요.
-- `진행`·`이어서`: 설계 보강만 수행하며 상태 전환 없음.
+- `진행`·`이어서`: D0~D1 품질 보증만 수행하며 상태 전환 없음.
 
 현재 정확한 표현:
 
-> **《팔대신병록》 설계서는 PM 후보 기준으로 완결됐으며, 기존 1~1000화 기능표도 960화 제작 구조·최신 인명·관계·신병·복선 장부와 동기화됐다. 사용자 확인 전 정본은 아니고 원고는 잠겨 있다.**
+> **《팔대신병록》 설계서는 PM 후보 기준으로 완결되고 통합 QA까지 통과해 동결 가능한 상태다. 이후 자동 진행은 새 설정 확장이 아니라 충돌 제거와 품질 보증에 한정한다. 사용자 확인 전 정본은 아니고 원고는 잠겨 있다.**
