@@ -2,72 +2,81 @@
 
 《팔대신병록》 세계관·서사 설계 저장소.
 
-이 프로젝트는 본문 집필보다 전체 설계를 먼저 완료한다.
+이 프로젝트는 소설 본문보다 전체 설계를 먼저 완성한다.
 
 ## 현재 단계
 
-`Gate 2 — 세력 아키텍처와 팔대신병 시스템`
+`PM 후보 설계서 완성 / 960화 기능표 동기화 / 통합 QA 완료 / 설계 동결 기준선 활성`
 
-Gate 1 세계 골격은 충돌 감사를 거쳐 `resolved-provisional`로 통과했다.
+현재 의미:
 
-현재 병렬 작업:
+- 캐릭터·관계·세계·지역·팔대신병·8부 플롯·복선·적대 구조·연속성·분량 설계가 갖춰졌다.
+- 기존 1~1000화 기능표는 사건 원본으로 보존하고 960화 제작 오버레이로 읽는다.
+- 구조적 P0는 0이다.
+- 후보 이름·명칭·로맨스·960화 중심값은 완성된 PM 권고안이며 사용자 정본은 아니다.
+- 원고는 사용자 집필 준비 승인 전까지 잠근다.
 
-- Track A: 세력 기능 슬롯과 권력 프로필
-- Track B: 팔대신병 기원·기능·대가 가설
-- 두 Track의 교차점: 각 세력이 각 신병을 원하는 이유
+## 작품 입구
 
-개별 문파·세가 이름은 기능과 생존 기반이 배정된 뒤 확정한다.
+> 참가하지 않은 비무 명단에 서유휘의 이름이 올라 있다. 소속은 문서상 `반보문`, 추천인은 죽은 줄 알았던 여성 사부다.
 
-## 핵심 문서
+- 여성 단일 주인공: 서유휘.
+- 표사·병기 수리 가문 후계·회귀·빙의·상태창을 사용하지 않는다.
+- 전통 무협의 문파·사승·은원·강호 이동을 뼈대로 쉬운 욕망·회차 보상·생활 유머를 전면에 둔다.
+- 팔대신병은 순차 수집물이 아니다.
 
-### 운영
+## 핵심 현행 문서
 
-- [전체 설계 로드맵](design/MASTER-DESIGN-ROADMAP.md)
-- [오케스트레이션 운영 규약](operations/ORCHESTRATION.md)
-- [Gate 0 결정 기록](operations/GATE-0-DECISION.md)
-- [Gate 1 결정 기록](operations/GATE-1-DECISION.md)
-- [프로젝트 헌법 v0.1](design/PROJECT-CONSTITUTION-v0.1.md)
+### 상태·통합
 
-### Gate 1 — 세계 골격
+- [PM 진행 대시보드](operations/PM-PROGRESS-DASHBOARD.md)
+- [완료 구성표](operations/PM-PRECANON-COMPLETION-INDEX-v1.md)
+- [설계 동결 기준선](operations/DESIGN-FREEZE-BASELINE-MANIFEST-v1.md)
+- [병합 직전 통합 패키지](operations/PM-PRECANON-INTEGRATION-PACKAGE-v1.md)
+- [설계 동결 Gate](operations/DESIGN-DOCUMENT-FREEZE-GATE-v1.md)
 
-- [역사·지리 기반 v0.1](design/HISTORICAL-BASELINE-v0.1.md)
-- [세계 권력 작동 원리 v0.1](design/WORLD-POWER-SYSTEM-v0.1.md)
-- [권역 구조 v0.1](design/REGIONAL-STRUCTURE-v0.1.md)
-- [경제·물류 구조 v0.1](design/ECONOMY-AND-LOGISTICS-v0.1.md)
-- [강호 법도와 관습 v0.1](design/JIANGHU-LAW-AND-CUSTOM-v0.1.md)
-- [Gate 1 충돌 감사](audit/GATE-1-CONFLICT-AUDIT.md)
+### 인물·신병·플롯
 
-### 감사 장부
+- [장기 인물·관계 장부](design/CHARACTER-RELATIONSHIP-LONGFORM-LEDGER-v1.md)
+- [팔대신병 사용자·대가·처리 장부](design/DIVINE-ARMS-USER-COST-DISPOSITION-LEDGER-v1.md)
+- [8부 적대·승리·비용 매트릭스](design/ARC-ANTAGONIST-VICTORY-COST-MATRIX-v1.md)
+- [복선·공개·회수 마스터](outline/FORESHADOWING-REVEAL-PAYOFF-MASTER-v1.md)
+- [960화 기능표 동기화 오버레이](outline/960EP-FUNCTION-MAP-SYNCHRONIZATION-OVERLAY-v1.md)
 
-- [미해결 질문 장부](audit/OPEN-QUESTIONS.md)
-- [이동 시간 장부](audit/TRAVEL-TIME-LEDGER.md)
+### 감사
 
-## 설계 흐름
+- [960화 통합 설계 QA](audit/960EP-INTEGRATED-DESIGN-QA-AUDIT-v1.md)
+- [최종 FUN·복제 방지·고증 감사](audit/FINAL-PRECANON-FUN-ORIGINALITY-HISTORICITY-AUDIT-v1.md)
+- [구버전 인명·기능표 동기화 감사](audit/LEGACY-NAME-AND-OUTLINE-SYNCHRONIZATION-AUDIT-v1.md)
+- [저장소 상태 권한·구문서 감사](audit/REPOSITORY-STATUS-AUTHORITY-AND-STALE-DOC-AUDIT-v1.md)
 
-`브레인스토밍 → 전문 설계 → 반대 검토 → 정합성 감사 → PM 통합 → 사용자 승인 → 정본 승격`
+## 8부 중심 착지
 
-## 승인 게이트
+| 부 | 제작 범위 | 핵심 전면 |
+|---|---:|---|
+| 1 | 1~110 | 비무 명단·거짓 소속·참가자 통제 |
+| 2 | 111~225 | 장강 세 배·첫 완전 신병 실물 |
+| 3 | 226~345 | 야간 정보전·떠날 권리 |
+| 4 | 346~465 | 공식 결투·두 사용자 생존 |
+| 5 | 466~590 | 소겸의 산문·검진·제자 선택 |
+| 6 | 591~715 | 세 지역·재련 실패·사용권 분산 |
+| 7 | 716~840 | 연소담과 구조 방식 실전 경쟁 |
+| 8 | 841~960 | 한 점 절초와 여러 퇴로 |
 
-- Gate 0: 프로젝트 경계 — `resolved-provisional`
-- Gate 1: 세계 골격 — `resolved-provisional`
-- Gate 2: 세력·팔대신병 시스템 — `in-progress`
-- Gate 3: 과거 진실·인물·핵심 갈등 — `blocked`
-- Gate 4: 결말·전체 플롯·복선 — `blocked`
-- Gate 5: 집필 준비 — `blocked`
+중심 착지 960화, 구조 보존 허용 범위 900~1050화.
 
-## Gate 2 우선 작업
+## 문서 상태 해석
 
-1. 구파일방과 오대세가의 제도적 성격 결정
-2. A등급 핵심 세력 12~16개의 기능 슬롯 설계
-3. 팔대신병이 정확히 여덟 개인 기원 가설 비교
-4. 신병 기억·감정·동작 잔향의 작동 규칙 설계
-5. 세력과 신병의 관계를 상호 검증
+저장소에는 설계 과정의 초기 Gate·대안 비교·폐기 프레임·검증 문서가 보존되어 있다.
 
-## 상태 태그
+- 구문서의 `draft`, `human-edit-pending`, `provisional-canon`, `blocked` 표시는 당시 기록이다.
+- 현재 진행 상태는 대시보드·완료 구성표·동결 기준선으로 판단한다.
+- `design/MASTER-DESIGN-ROADMAP.md`의 과거 진행 위치는 참고 기록이며 현재 우선순위가 아니다.
+- 기존 10화 기능표는 사건 원본이고, 최신 이름·화수·관계는 960화 오버레이가 덮어쓴다.
 
-- `brainstorm`
-- `draft`
-- `review`
-- `provisional-canon`
-- `canon`
-- `archive`
+## 승인과 집필
+
+- `진행`·`이어서`: 설계 감사·정리·동기화만 계속한다.
+- `정본`, `확정`, `승인`: 사용자가 명시한 대상만 정본 승격 검토한다.
+- 집필 개방은 정본 승인과 별도의 집필 준비 승인이 필요하다.
+- 현재 원고 상태: `locked`.
