@@ -1,7 +1,7 @@
 # 《팔대신병록》 PM 진행 대시보드
 
-상태: `user-canon-integrated / deep-orchestra-reviewed / production-corrections-applied / P0-zero / manuscript-locked`
-업데이트: `2026-08-01`
+상태: `prewriting-design-complete / production-pack-ready / P0-zero / manuscript-locked`
+업데이트: `2026-08-02`
 
 ## 1. 프로젝트 역할
 
@@ -30,11 +30,14 @@
 4. `canon/USER-CANON-LOCK-2026-08-01.md`.
 5. `canon/INTEGRATED-WORLD-SETTING-DESIGN-BIBLE-v1.md`.
 6. `operations/CURRENT-DESIGN-SOURCE-OF-TRUTH-v1.md`.
-7. `outline/8ACT-32SUBACT-CANON-BLUEPRINT-v1.md`.
-8. `outline/ORCHESTRA-DEEP-REVIEW-CORRECTION-OVERLAY-v1.md`.
-9. `outline/32SUBACT-TO-96BLOCK-PRODUCTION-CROSSWALK-v1.md`.
-10. `outline/960EP-COLLECTION-REWARD-MAP-v1.md`.
-11. 최신 정본 장부·감사.
+7. `operations/LEGACY-DOCUMENT-MIGRATION-MANIFEST-v1.md`.
+8. `outline/8ACT-32SUBACT-CANON-BLUEPRINT-v1.md`.
+9. `outline/ORCHESTRA-DEEP-REVIEW-CORRECTION-OVERLAY-v1.md`.
+10. `outline/32SUBACT-TO-96BLOCK-PRODUCTION-CROSSWALK-v1.md`.
+11. `outline/960EP-COLLECTION-REWARD-MAP-v1.md`.
+12. `outline/960EP-CANON-SYNCHRONIZATION-RULES-v1.md`.
+13. `production/WRITER-EXECUTION-PACK-v1.md`.
+14. 최신 정본 장부·감사.
 
 여성 서유휘, 소겸, 연소담, 양홍주, 진하, 만류귀종 등 과거 값은 archive-reference다.
 
@@ -46,7 +49,7 @@
 - 신수 생태·장인 제련·복원 시간·의술·부상 회복.
 - 천하팔대신병·강호기보록·분야별 수집축.
 - 명명·가독성·편의 능력 금지 규칙.
-- 일반인이 무림인을 바라보는 생활 관점과 지역별 무림 허용도는 심층 감사 수정 오버레이에서 운용 규칙으로 추가.
+- 일반인이 무림인을 바라보는 생활 관점과 지역별 무림 허용도.
 
 핵심 문서:
 
@@ -68,6 +71,7 @@
 - ACT 4·6·8 보강.
 - ACT 6 설명 속도 통제.
 - ACT 8 최종 결산 순서·감정 파형·다섯 물리 구역.
+- 96블록별 주인공성·세계관 사건화·수집 보상·반복 방지 동기화 규칙.
 
 핵심 문서:
 
@@ -76,6 +80,7 @@
 - `outline/32SUBACT-ANTAGONIST-SETPIECE-MATRIX-v1.md`
 - `outline/ORCHESTRA-DEEP-REVIEW-CORRECTION-OVERLAY-v1.md`
 - `outline/32SUBACT-TO-96BLOCK-PRODUCTION-CROSSWALK-v1.md`
+- `outline/960EP-CANON-SYNCHRONIZATION-RULES-v1.md`
 - `outline/ACT6-ACT8-PACING-AND-EMOTIONAL-BEAT-CONTROL-v1.md`
 
 ## 6. 천하팔대신병 완료
@@ -89,43 +94,37 @@ D6 청맥인 / 맥칼 — 진단·최소 절개로 운공 흐름 파괴.
 D7 해명궁 / 울림활 — 원거리 신호·박자.
 D8 봉서검 / 편지검 — 명령 매개·기록 검증.
 
-각 신병은 형상·전투 기능·생활 기능·사용자·발견 방식·대응 무공·부속·대가·첫 완전 사용·최종 처분·금지 편의를 확정했다. 심층 감사 뒤 각 신병에 절세병기다운 압도적 단독 전투 보상을 추가했다.
+각 신병은 형상·전투 기능·생활 기능·사용자·발견 방식·대응 무공·부속·대가·첫 완전 사용·최종 처분·금지 편의를 확정했다.
+
+## 7. 구버전 보호와 이관
+
+- 과거 후보 문서는 설계 이력으로 보존한다.
+- 현행 제작 입력과 archive-reference를 분리했다.
+- 폐기 인명·성별·무공명·로맨스 상태를 검색 전용 값으로 명시했다.
+- 원고 개방 전 폐기 값 검색을 한 번 더 수행한다.
 
 핵심 문서:
 
-- `design/EIGHT-DIVINE-ARMS-COLLECTION-LEDGER-v1.md` — 내용은 정본 v2.
-- `outline/ORCHESTRA-DEEP-REVIEW-CORRECTION-OVERLAY-v1.md`.
+- `operations/LEGACY-DOCUMENT-MIGRATION-MANIFEST-v1.md`.
 
-## 7. 심층 오케스트라 감사
+## 8. 작가 실행 패키지
 
-최신 감사:
+작가가 여러 설계 문서를 매번 탐색하지 않도록 다음을 한 문서로 압축했다.
 
-- `audit/ORCHESTRA-DEEP-DIVE-REVIEW-2026-08-01.md`
+- 작품 한 문장과 독자 약속.
+- 금지 요소.
+- 핵심 인물 카드.
+- 세계 운용 압축표.
+- 회차·장면 설계 카드.
+- 연속성 장부 필드.
+- 첫 30화 준비 기준.
+- 원고 개방 후 실행 순서.
 
-주요 발견:
+핵심 문서:
 
-1. 구조 성공과 권리 확보 결산 반복.
-2. 기관·조직 중심 적대축으로 얼굴 있는 적대자 부족.
-3. 천하팔대신병이 절세병기보다 공구 세트처럼 보일 위험.
-4. 서유휘가 수집가보다 구조 지휘관처럼 보일 위험.
-5. 소연후·백여울이 주인공보다 선명해질 위험.
-6. ACT 6 제작 설명, ACT 7 철학 논쟁, ACT 8 결산 과밀 위험.
-7. 연무진 진실이 후반에 집중될 위험.
-8. 개로무극이 개인 무공보다 협업 시스템처럼 보일 위험.
+- `production/WRITER-EXECUTION-PACK-v1.md`.
 
-적용한 완화:
-
-- 액트별 얼굴 있는 반대자 8인 추가.
-- 구조 중심 결산 32개 중 최대 8개.
-- 액트별 순수 승부 최소 1회.
-- 신병별 압도적 전투 보상 최소 1회.
-- 서유휘의 욕망·선택으로 시작되는 사건 60% 이상.
-- 조연 8인 사적 관계·생활 습관·잔존 욕망 추가.
-- 천공팔기 반전 단서를 ACT 1~6에 단계적으로 분산.
-- 만류귀일보를 입류·절류·전류·개로 네 운용군으로 구체화.
-- 개로무극은 독자 전투에서도 다중 공격로를 여는 개인 절정 무공으로 고정.
-
-## 8. 현재 전문 역할 판정
+## 9. 현재 전문 역할 판정
 
 - PM·캐논: PASS.
 - 흥미·연독: 수정 후 PASS.
@@ -143,39 +142,42 @@ D8 봉서검 / 편지검 — 명령 매개·기록 검증.
 - 연속성·문서 QA: CONDITIONAL PASS — 구 문서 검색 노출 감시.
 - 레드팀: 완화책 반영 후 PASS.
 
-## 9. 현재 판정
+## 10. 최종 설계 판정
 
 - 세계관: COMPLETE.
 - 설정집: COMPLETE.
 - 8액트: COMPLETE.
 - 32서브액트: COMPLETE.
 - 96개 10화 보상 지도: COMPLETE.
+- 96블록 정본 동기화 규칙: COMPLETE.
 - 32↔96 제작 교차표: COMPLETE.
-- 얼굴 있는 적대자·승리 유형·순수 승부: COMPLETE.
-- 천하팔대신병 8개 개별 설계와 압도 보상: COMPLETE.
+- 천하팔대신병 8개 개별 설계: COMPLETE.
+- 구문서 이관 명세: COMPLETE.
+- 작가 실행 패키지: COMPLETE.
+- 집필 전 최종 QA: PASS.
 - 구조적 P0: 0.
-- 설계 P1: 심층 감사 후 완화책 반영.
-- P2: 실제 원고에서 문체·고유명 밀도·전투 감각·구 문서 검색 노출 감시.
 - 추가 백과사전식 세계관 확장: STOP.
 
-## 10. 남은 Gate
+최종 감사:
+
+- `audit/PREWRITING-FINAL-DESIGN-QA-2026-08-02.md`.
+
+## 11. 남은 Gate
 
 사용자 전용:
 
 - 원고 작성 개방.
 - 플랫폼·계약에 따른 실제 회차 분량 조정.
 
-원고 실행 시 이월 감시:
+원고 개방 뒤 실행 순서:
 
-- 한 장면 신규 고유명 최대 2개.
-- 한 화 신규 고유명 최대 3개.
-- ACT 6 설명 장면 2화 연속 금지.
-- ACT 8 한 화 전면 핵심 인물 5명, 작동 신병 2개 초과 금지.
-- 두 서브액트 연속 동일 승리 유형 금지.
-- 한 액트 구조 세트피스 최대 2개.
-- 백여울의 독립 목적 유지.
-- 소연후가 제2주인공으로 중심을 빼앗지 않도록 서유휘의 결정 원인과 비용 유지.
+1. ACT 1 110화 개요 잠금.
+2. 1~30화 상세 비트.
+3. 1~10화 장면표.
+4. 제1화 원고.
+5. 1~3화 연독성 감사.
+6. 제10화까지 단계 확장.
 
-## 11. 현재 정확한 표현
+## 12. 현재 정확한 표현
 
-> **《팔대신병록》은 세계관·설정집·8액트·32서브액트·96개 10화 블록·천하팔대신병 8개 장부까지 정본 제작 설계가 완성됐다. 심층 오케스트라 검토에서 반복 구조, 얼굴 없는 적대자, 신병 공구화, 주인공 구조 지휘관화, 후반 설명 과밀 등 P1을 발견했고, 액트별 대표 반대자·순수 승부·승리 유형 분산·신병별 압도 보상·조연 개인성·복선 조기 분산·만류귀일보 네 운용군으로 보강했다. 구조적 P0는 0이며, 남은 것은 원고 단계의 문체·밀도·장면 실행 감시와 사용자 원고 개방 승인이다.**
+> **《팔대신병록》은 세계관·설정집·8액트·32서브액트·96개 10화 블록·천하팔대신병 8개 장부·구버전 이관 규칙·작가 실행 패키지까지 집필 전 제작 설계가 완료됐다. 구조적 P0는 0이며 원고는 잠겨 있다. 다음 단계는 사용자 승인 아래 ACT 1 110화 개요를 집필용으로 잠그고 1~30화 상세 비트와 제1화 원고로 진입하는 것이다.**
