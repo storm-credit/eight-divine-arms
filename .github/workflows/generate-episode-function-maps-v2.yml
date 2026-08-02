@@ -1,0 +1,40 @@
+name: Generate Episode Function Maps V2
+
+on:
+  push:
+    paths:
+      - "tools/generate_episode_function_maps.py"
+      - "tools/generate_episode_function_maps_v2.py"
+      - "outline/960EP-COLLECTION-REWARD-MAP-v1.md"
+      - ".github/workflows/generate-episode-function-maps-v2.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Generate ACT2-8 episode maps
+        run: python tools/generate_episode_function_maps_v2.py
+      - name: Verify complete coverage
+        run: python tools/generate_episode_function_maps_v2.py --check
+      - name: Commit generated design files
+        shell: bash
+        run: |
+          if git diff --quiet -- production/episode-function-maps outline/FORESHADOW-PAYOFF-LEDGER-v2.md audit/960EP-EPISODE-FUNCTION-MAP-QA.md; then
+            echo "Episode maps are already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add production/episode-function-maps outline/FORESHADOW-PAYOFF-LEDGER-v2.md audit/960EP-EPISODE-FUNCTION-MAP-QA.md
+          git commit -m "build: generate ACT2-8 episode function maps"
+          git push
