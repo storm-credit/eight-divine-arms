@@ -1,0 +1,50 @@
+name: Prose QA Harness
+
+on:
+  push:
+    paths:
+      - "tools/**"
+      - "config/**"
+      - "tests/**"
+      - "manuscripts/**"
+      - ".github/workflows/prose-harness.yml"
+  pull_request:
+    paths:
+      - "tools/**"
+      - "config/**"
+      - "tests/**"
+      - "manuscripts/**"
+      - ".github/workflows/prose-harness.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Run canon blocker scan when manuscripts exist
+        shell: bash
+        run: |
+          if find manuscripts -type f \( -name '*.md' -o -name '*.txt' \) -print -quit 2>/dev/null | grep -q .; then
+            python tools/prose_harness.py manuscripts \
+              --recursive \
+              --strict-canon \
+              --report reports/prose-qa.md
+          else
+            echo "No manuscript files yet; skipping manuscript scan."
+          fi
+      - name: Upload prose report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: prose-qa-report
+          path: reports/prose-qa.md
+          if-no-files-found: ignore
