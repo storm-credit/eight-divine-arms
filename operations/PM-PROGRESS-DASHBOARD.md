@@ -1,140 +1,129 @@
 # 《팔대신병록》 PM 진행 대시보드
 
-상태: `act1-production-design-complete / opening-10-scene-ready / P0-zero / manuscript-locked`
-업데이트: `2026-08-02`
+상태: `prewriting-system-complete / prose-engine-complete / automated-harness-enabled / manuscript-locked`
+업데이트: `2026-08-03`
 
-## 1. 프로젝트 역할
+## 1. 역할
 
 - 최종 오너·정본 승인자: 사용자.
 - 실행 PM·오케스트레이터·캐논 관리자: 현재 작업 AI.
-- 전문 검토는 `CLAUDE.md`의 역할 체계에 따라 문서화한다.
+- 전문 역할은 PM, 연독, 무협, 전투, 세계관, 캐릭터, 복선, 문체, 연속성, 레드팀 등으로 분리해 문서화한다.
 - 실제 별도 에이전트가 실행되지 않았다면 병렬 다중 에이전트 실행이라고 주장하지 않는다.
 
-## 2. 사용자 정본
+## 2. 정본 핵심
 
 - 남성 단일 주인공: 서유휘.
 - 회귀·빙의·상태창 없음.
 - 수집형 정통 무협 웹소설.
-- 중심 분량: 8액트·960화.
+- 중심 분량: 8대액트·960화.
 - 핵심 인물: 소연후, 연무진, 백여울, 진서하, 곽하진, 도해원, 임강현, 위연호, 문시헌, 고윤재, 석주안, 한려진.
 - 로맨스: 백여울 단일 상대, 경쟁적 동행형.
 - 세트명: 천하팔대신병 / 천공팔기 / 강호기보록.
 - 최종 무공: 만류귀일보 → 개로무극, 최종 오의 팔방개로.
-- 원고: 사용자 집필 승인 전 잠금.
 
-## 3. 현행 제작 읽기 순서
-
-1. 최신 사용자 발언.
-2. `book_writing.md`.
-3. `CLAUDE.md`.
-4. `canon/USER-CANON-LOCK-2026-08-01.md`.
-5. `canon/INTEGRATED-WORLD-SETTING-DESIGN-BIBLE-v1.md`.
-6. `operations/CURRENT-DESIGN-SOURCE-OF-TRUTH-v1.md`.
-7. `operations/LEGACY-DOCUMENT-MIGRATION-MANIFEST-v1.md`.
-8. `outline/8ACT-32SUBACT-CANON-BLUEPRINT-v1.md`.
-9. `outline/960EP-CANON-SYNCHRONIZATION-RULES-v1.md`.
-10. `production/WRITER-EXECUTION-PACK-v1.md`.
-11. `production/ACT1-EP001-110-PRODUCTION-OUTLINE-v1.md`.
-12. `production/ACT1-EP001-030-DETAILED-STORY-BEATS-v1.md`.
-13. `production/ACT1-EP001-010-SCENE-DESIGN-v1.md`.
-14. 최신 감사 문서.
-
-여성 서유휘, 소겸, 연소담, 양홍주, 진하, 만류귀종 등은 archive-reference다.
-
-## 4. 세계관·설정집·장기 설계 상태
+## 3. 설계 완료 상태
 
 - 세계관: COMPLETE.
 - 설정집: COMPLETE.
 - 천하팔대신병 8개 장부: COMPLETE.
-- 8액트: COMPLETE.
-- 32서브액트: COMPLETE.
+- 8대액트: COMPLETE.
+- 32중액트: COMPLETE.
+- 소액트·미니아크 운용 원칙: COMPLETE.
 - 96개 10화 보상 지도: COMPLETE.
-- 32↔96 제작 교차표: COMPLETE.
-- 구버전 이관 규칙: COMPLETE.
-- 작가 실행 패키지: COMPLETE.
+- 맥거핀 설치·증폭·변환·회수 구조: COMPLETE.
+- ACT 1 1~110화 화별 개요: COMPLETE.
+- 1~30화 상세 비트: COMPLETE.
+- 1~10화 장면 설계: COMPLETE.
 - 구조적 P0: 0.
 
-## 5. ACT 1 제작 설계 완료
+핵심 문서:
 
-### ACT 1 전체
+- `canon/INTEGRATED-WORLD-SETTING-DESIGN-BIBLE-v1.md`
+- `outline/8ACT-32SUBACT-CANON-BLUEPRINT-v1.md`
+- `outline/NESTED-ARC-MACGUFFIN-PAYOFF-ARCHITECTURE-v1.md`
+- `production/ACT1-EP001-110-PRODUCTION-OUTLINE-v1.md`
+- `production/ACT1-EP001-030-DETAILED-STORY-BEATS-v1.md`
+- `production/ACT1-EP001-010-SCENE-DESIGN-v1.md`
 
-- 범위: 1~110화.
-- 제목: `이름과 부러진 검편`.
-- 중심 욕망: 이름 도용과 죽은 사부의 추천을 추적하면서 검편의 진위를 밝힌다.
-- ACT 종료 보상: 검편 임시 소유, 보법 잔편·주석, 감정 기록, 장강 수로도, 강호 신용, 반보문 책임 계약.
-- ACT 2 연결: 장강 세 배 실종과 첫 완전 신병.
+## 4. 작문 시스템 완료
 
-문서:
+- 서유휘 밀착 3인칭 제한 시점.
+- 단문 자체가 아니라 단문 사슬과 기계적 한 문장 문단을 금지.
+- 전투는 선행 징후 → 거리·부위 → 대응 → 접촉 → 충격 전달 → 새 위치 → 다음 선택 제한 순으로 묘사.
+- 풍경은 이동·전투·생계·감정·단서 중 하나 이상을 바꾸는 기능적 묘사로 운용.
+- 한국 웹소설 작품은 문장 복제가 아니라 화자성·연독·공간성·권력 보상의 작동 원리만 참고.
+- 대액트 → 중액트 → 소액트 → 미니아크 → 개별 화의 중첩 구조를 사용.
 
-- `production/ACT1-EP001-110-PRODUCTION-OUTLINE-v1.md`.
+핵심 문서:
 
-### 1~30화 상세화
+- `production/PROSE-WRITING-ENGINE-v1.md`
+- `production/KOREAN-WEBNOVEL-STYLE-REFERENCE-MATRIX-v1.md`
+- `audit/PROSE-STYLE-QA-HARNESS-v1.md`
+- `audit/ORCHESTRA-PROSE-STRUCTURE-HARNESS-REVIEW-2026-08-02.md`
 
-- 각 화의 즉시 욕망·장애물·선택·보상·관계 변화·화말 질문을 확정.
-- 10화: 출전 선택.
-- 20화: 세 차례 장부 동시 수정 기록.
-- 25화: 반보문 임시 책임 유지.
-- 30화: 첫발 읽기 도해와 장인 계보 획득.
+## 5. 자동 하네스 구현
 
-문서:
+파일:
 
-- `production/ACT1-EP001-030-DETAILED-STORY-BEATS-v1.md`.
+- `tools/prose_harness.py`
+- `config/prose_harness.json`
+- `tests/test_prose_harness.py`
+- `.github/workflows/prose-harness.yml`
+- `operations/AUTOMATED-PROSE-HARNESS-RUNBOOK-v1.md`
 
-### 1~10화 장면 설계
+자동 검사:
 
-- 화당 3~5장면 구조.
-- 대련·정산·명단·피해자·감정회·전표·라이벌 승부·계약으로 장면 기능 분산.
-- 완성 대사와 본문 묘사는 작성하지 않음.
+- 폐기 정본 P0.
+- 짧은 문장 연속과 한 문장 문단 과밀.
+- 반복 문장 첫머리·표현·주의어.
+- 고유명 밀도 후보.
+- 풍경 감각 신호 부재.
+- 전투 공간·퇴로 정보 부족.
+- 부상·관계 동반 연속성 신호 누락.
 
-문서:
+CI 정책:
 
-- `production/ACT1-EP001-010-SCENE-DESIGN-v1.md`.
+- 단위 테스트와 폐기 정본 P0만 실패 처리.
+- 문체 P1/P2는 리포트만 생성.
+- 자동 경고가 문학적 최종 판정을 대신하지 않는다.
 
-## 6. 최신 오케스트라 QA
+감사:
 
-문서:
+- `audit/AUTOMATED-PROSE-HARNESS-COMPLETION-2026-08-03.md`
 
-- `audit/ACT1-PRODUCTION-DESIGN-QA-2026-08-02.md`.
+## 6. 현행 제작 읽기 순서
 
-판정:
+1. 최신 사용자 결정.
+2. `book_writing.md`.
+3. `CLAUDE.md`.
+4. 최신 canon 문서.
+5. `operations/CURRENT-DESIGN-SOURCE-OF-TRUTH-v1.md`.
+6. 8액트·32중액트·96블록 정본 설계.
+7. ACT 1 제작 설계.
+8. `production/PROSE-WRITING-ENGINE-v1.md`.
+9. `audit/PROSE-STYLE-QA-HARNESS-v1.md`.
+10. 자동 하네스 실행서와 최신 감사.
 
-- PM·캐논: PASS.
-- 흥미·연독: PASS WITH P1 MITIGATION.
-- 주인공성: PASS.
-- 수집·보상: PASS.
-- 캐릭터·관계: PASS WITH P2.
-- 무협·전투: PASS WITH P2.
-- 세계관·연속성: PASS.
-- 구조적 P0: 0.
+여성 서유휘, 소겸, 연소담, 양홍주, 진하, 만류귀종 등은 archive-reference다.
 
-발견된 주요 위험:
+## 7. 남은 Gate
 
-1. 첫 10화 정보·고유명 과밀.
-2. 비무보다 장부·행정 추적이 앞서는 인상.
-3. 검편 하나를 110화 추적하는 피로.
-4. 백여울·소연후가 서유휘보다 유능해 보일 위험.
-5. 연무진이 모든 일을 설계한 전지적 흑막처럼 보일 위험.
+원고 개방 전:
 
-적용 완화:
+1. EP001 문체·시점·분량 카드.
+2. EP001~003 감정 곡선과 훅 카드.
+3. 첫 10화 제목·화말 기능표.
+4. 사용자 원고 작성 승인.
 
-- 첫 10화에서 천하팔대신병·천공팔기·강호기보록 정식명 설명 금지.
-- 검편은 초반에 `부러진 검편`으로만 부름.
-- 10화마다 중간 수집·관계·정보 보상 지급.
-- 매 10화 구간에 몸을 쓰는 승부 포함.
-- 추천서·대표 등록·장부 수정의 작성자를 분리.
-- 사건의 지속·포기·비용 선택은 서유휘가 담당.
+원고 개방 뒤:
 
-## 7. 현재 남은 작업
-
-원고 개방 전 추가 설계 선택지:
-
-1. EP001 원고용 문체·시점·분량 카드 확정.
-2. EP001~003 연속 집필용 감정 곡선 카드.
-3. 첫 10화 제목 후보와 화말 훅 문장 기능표.
-4. 원고 작성 개방.
-
-현재는 1화 원고를 바로 쓸 수 있는 직전 단계지만, 사용자 승인 전 원고는 계속 잠근다.
+1. EP001 초고.
+2. 자동 하네스 실행.
+3. 수동 120점 하네스 재판정.
+4. EP001~003 묶음 검수.
+5. 실제 원고로 자동 임계값 보정.
+6. 인물 음성 회귀 코퍼스와 구조화 연속성 JSON 추가.
 
 ## 8. 현재 정확한 표현
 
-> **《팔대신병록》은 세계관·설정집·960화 장기 설계에 이어 ACT 1 전체 110화 집필용 개요, 1~30화 상세 줄거리 비트, 1~10화 장면 설계와 오케스트라 QA까지 완료됐다. 첫 10화 정보 밀도와 행정 추적물화 위험을 확인해 명칭 노출 제한·행동 중심 설명·중간 수집 보상·승부 유형 분산으로 완화했다. 구조적 P0는 0이며 원고는 사용자 승인 전 잠겨 있다.**
+> **세계관·설정집·960화 장기 구조·ACT 1 제작 설계·작문 엔진·문체 수동 하네스·자동 정적 검사기와 CI까지 구현됐다. 자동 하네스는 폐기 정본과 측정 가능한 문체 위험 위치를 찾으며 문학적 최종 판정은 오케스트라 수동 검수가 담당한다. 실제 원고가 없어 임계값 보정과 원격 CI 성공 확인은 아직 남아 있고, 원고는 사용자 승인 전 잠겨 있다.**
